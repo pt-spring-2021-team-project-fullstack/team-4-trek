@@ -6,5 +6,5 @@ import java.util.Optional;
 
 public interface ContinentRepository extends CrudRepository<Continent,Long> {
 
-        Optional<Continent> findByContinent(String continentName);
+        Optional<Continent> findByContinentName(String continentName);
 }

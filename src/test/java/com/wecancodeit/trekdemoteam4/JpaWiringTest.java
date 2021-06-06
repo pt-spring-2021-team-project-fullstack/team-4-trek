@@ -52,7 +52,8 @@ public class JpaWiringTest {
 
 
         Trek trek1 = new Trek(nA,north,backPack);
-        Trek trek2 = new Trek(sA,south,llamaTrack);
+        Trek trek2 = new Trek(nA,south,llamaTrack);
+        Trek trek3 = new Trek(sA,south,llamaTrack);
 
         trekRepo.save(trek1);
         trekRepo.save(trek2);
