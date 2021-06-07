@@ -13,6 +13,8 @@ public class Trek {
     @GeneratedValue
     private Long id;
 
+    private String trekName;
+
     @ManyToOne
     private Continent continent;
 
@@ -26,7 +28,8 @@ public class Trek {
 
     }
 
-    public Trek(Continent continent, Region region, TrekType trekType) {
+    public Trek(String trekName, Continent continent, Region region, TrekType trekType) {
+        this.trekName = trekName;
         this.continent = continent;
         this.region = region;
         this.trekType = trekType;
@@ -35,6 +38,8 @@ public class Trek {
     public Long getId() {
         return id;
     }
+
+    public String getTrekName() { return trekName; }
 
     public Continent getContinent() {
         return continent;
