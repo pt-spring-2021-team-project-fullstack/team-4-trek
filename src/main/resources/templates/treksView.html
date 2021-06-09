@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>TREKS TREKS TREKS!!!</title>
+</head>
+<body>
+
+    <h1>TreksView</h1>
+
+    <div th:each="trek: ${treksModel}">
+        <p th:text=" 'Trek Name: ' + ${trek.trekName}"></p>
+        <p th:text=" 'Continent: ' + ${trek.continent.continentName}"></p>
+        <p th:text=" 'Region: ' + ${trek.region.regionName}"></p>
+        <p th:text=" 'Trek Type: ' + ${trek.trekType.typeName}"></p>
+        <br>
+    </div>
+    <br>
+    <form action="/create-trek" method="POST">
+        <input type="text" name="trekName" placeholder="What is the Name of the Trek">
+        <input type="text" name="continentName" placeholder="Which continent is the trek located in?">
+        <input type="text" name="regionName" placeholder="Which region is the trek located in?">
+        <input type="text" name="typeName" placeholder="What type of trek is it?">
+
+            <button type="submit">Add a Trek</button>
+    </form>
+</body>
+</html>

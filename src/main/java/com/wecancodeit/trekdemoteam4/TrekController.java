@@ -65,6 +65,7 @@ public class TrekController {
 
         if (trekToAddOpt.isEmpty()){
             Trek trekToAdd = new Trek(trekName,continentToAdd,regionToAdd,trekTypeToAdd);
+            trekRepo.save(trekToAdd);
         }
 
         return "redirect:/treks/";
