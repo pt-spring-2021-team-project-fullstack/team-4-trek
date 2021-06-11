@@ -21,37 +21,28 @@ section {
 }
 
 nav {
-	/* position: fixed; */
-	margin: 0 0;
-	display: flex;
 	background-color: #8e3a52;
-	font-weight: 600;
 }
 
 nav ul {
 	list-style-type: none;
-	display: flex;
-	flex-direction: row;
-	margin: 0 auto;
+	text-align: center;
 }
 
 nav li {
-	display: flex;
-	letter-spacing: 0.1rem;
+	display: inline;
 }
 
 nav a {
-	text-decoration: none;
 	color: #ffffff;
+	text-decoration: none;
 	font-weight: 600;
+	letter-spacing: 0.1rem;
 	padding: 1rem;
 }
 
 nav a:hover {
 	background-color: #56202d;
-}
-nav a:visited {
-	color: #ffffff;
 }
 
 .createTrek .container {
