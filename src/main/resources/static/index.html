@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Staatliches&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/stylesheets/indexStyle.css" />
+		<title>Treks</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html" target="#">HOME</a>
+					</li>
+					<li>
+						<a href="#trekInfo" target="_self">INFORMATION</a>
+					</li>
+					<li>
+						<a href="#continents" target="_self">CONTINENTS</a>
+					</li>
+					<li>
+						<a href="regions.html" target="_blank">REGIONS</a>
+					</li>
+					<li>
+						<a href="localhost:8080/treks" target="_blank">TREKS</a>
+					</li>
+
+					<li>
+						<a href="/static/about.html" target="_blank"
+							>ABOUT TEAM</a
+						>
+					</li>
+				</ul>
+			</nav>
+			<main>
+				<section class="createTrek">
+					<div class="container">
+						<!-- <img src="/images/trek1.jpg" alt="" /> -->
+						<div class="title">
+							<h1>WORLD CLASS TREKS</h1>
+							<h2>Your Journey Begins Here</h2>
+						</div>
+					</div>
+					<div class="creatorContainer">
+						<div class="trekCreator">
+							<label for="destinations">Destination</label>
+							<select name="destinations" id="">
+								<option value="africa">Africa</option>
+								<option value="antarctica">Antarctica</option>
+								<option value="asia">Asia</option>
+								<option value="europe">Europe</option>
+								<option value="northAmerica">
+									North America
+								</option>
+								<option value="southAmerica">
+									South America
+								</option>
+								<option value="australia">Australia</option>
+							</select>
+						</div>
+					</div>
+				</section>
+				<!-- <section class="whoWeAre">
+                    <div>
+                        <div class="whoWeAreHeader">
+                            <h2>Welcome To WCCI Trekking</h2>
+                            <h3>
+                                Here are the key reasons we are a trek above the
+                                rest
+                            </h3>
+                        </div>
+                        <ul class="whoWeAreRow">
+                        
+                                <li>
+                                    We offer unforgettable trips from all across
+                                    the globe.  Whether this is your first trek or
+                                    your 100th, we have something for everybody who
+                                    wants to experience the amazing world we live in!
+                                </li>
+                                <li>
+                                    All of our guides are seasoned experts that
+                                    are A+ rated by Trekking Enthusiast. Your
+                                    guide is a specialist within the region,
+                                    having led over 100+ expeditions, your trip
+                                    will include rich history and information,
+                                    alongside the great views of nature.
+                                </li>
+                                
+                            </ul>
+                            <ul class="whoWeAreRow">
+                                
+                                <li>
+                                    Our trips will satisfy the needs of lodging,
+                                    guides, supplies, and food, so you can focus
+                                    on the experience of your trip!
+                                </li>
+                                <li>
+                                    Personalize your trip with our one of a kind
+                                    trek creator.  See the different continets and
+                                    regions that we have treks in, and explore the
+                                    information below.
+                                </li>
+                            
+                            </ul>
+                        </ul>
+                    </div>
+                </section> -->
+				<section id="trekInfo">
+					<div class="infoHeader">
+						<h2>New To Trekking?</h2>
+						<h3>
+							Here are a few resources to help you get familiar
+							with trekking
+						</h3>
+					</div>
+					<div class="infoContainer">
+						<div class="infoList">
+							<h3>Terrains</h3>
+							<ul>
+								<li>Desert</li>
+								<li>Mountains</li>
+								<li>Jungle</li>
+								<li>Ice</li>
+								<li>River</li>
+							</ul>
+						</div>
+						<div class="infoList">
+							<a href="/static/trekTypes.html"><h3>Types</h3></a>
+							<ul>
+								<li>Guided Backpacking Trips</li>
+								<li>Basecamp Tours</li>
+								<li>Inn-Based Tours</li>
+								<li>Hut To Hut Treks</li>
+								<li>Day Hike Tours</li>
+								<li>Llama Treks</li>
+								<li>Ski/Snowshoe Tours</li>
+								<li>Paddle & Hike</li>
+								<li>Family Friendly Trips</li>
+							</ul>
+						</div>
+						<div class="infoList">
+							<h3>Difficulties</h3>
+							<ul>
+								<li>Beginner</li>
+								<li>Easy</li>
+								<li>Normal</li>
+								<li>Hard</li>
+								<li>Very Hard</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section id="continents">
+					<div class="continentHeader">
+						<h2>Take A Look At These Continents</h2>
+						<h3>
+							We offer treks all over the globe. <br />
+							Ocean to ocean, continent to continent.
+						</h3>
+					</div>
+					<div class="continentContainer">
+						<div class="continentBlock">
+							<a
+								href="localhost:8080/continent/africa"
+								target="#"
+							>
+								<img src="/images/africa.jpg" alt="" />
+								AFRICA
+							</a>
+						</div>
+						<div class="continentBlock">
+							<a
+								href="localhost:8080/continent/antarctica"
+								target="#"
+							>
+								<img src="/images/antarctica.jpg" alt="" />
+								ANTARCTICA
+							</a>
+						</div>
+						<div class="continentBlock">
+							<a href="localhost:8080/continent/asia" target="#">
+								<img src="/images/asia.jpg" alt="" />
+								ASIA
+							</a>
+						</div>
+						<div class="continentBlock">
+							<a
+								href="localhost:8080/continent/europe"
+								target="#"
+							>
+								<img src="/images/europe.jpg" alt="" />
+								EUROPE
+							</a>
+						</div>
+						<div class="continentBlock">
+							<a
+								href="localhost:8080/continent/northAmerica"
+								target="#"
+							>
+								<img src="/images/nAmerica.jpg" alt="" />
+								NORTH AMERICA
+							</a>
+						</div>
+						<div class="continentBlock">
+							<a
+								href="localhost:8080/continent/southAmerica"
+								target="#"
+							>
+								<img src="/images/sAmerica.jpg" alt="" />
+								SOUTH AMERICA
+							</a>
+						</div>
+						<div class="continentBlock">
+							<a
+								href="localhost:8080/continent/australia"
+								target="#"
+							>
+								<img src="/images/australia.jpg" alt="" />
+								AUSTRALIA
+							</a>
+						</div>
+					</div>
+				</section>
+				<!-- <section class="aboutUs">
+                    <div class="aboutUsHeader">
+                        <a href="aboutUs.html">
+                            <h2>About Us</h2>
+                        </a>
+                        <h3>Find Out More About The Creators</h3>
+                    </div>
+                </section> -->
+			</main>
+			<footer>
+				<span id="copyright"> &copyWeCanCodeIT Team-4 2021 </span>
+			</footer>
+		</div>
+	</body>
+</html>

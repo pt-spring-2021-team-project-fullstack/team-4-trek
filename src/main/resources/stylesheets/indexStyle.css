@@ -1,0 +1,214 @@
+body {
+	background-color: #ffffff;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.725rem;
+	min-height: 100vh;
+	margin: 0 auto;
+	font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	/* max-width: 1080px; */
+	margin: 0 auto;
+}
+
+section {
+	margin: 0 auto;
+}
+
+nav {
+	/* position: fixed; */
+	margin: 0 0;
+	display: flex;
+	background-color: #8e3a52;
+	font-weight: 600;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+}
+
+nav li {
+	display: flex;
+	letter-spacing: 0.1rem;
+}
+
+nav a {
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 600;
+	padding: 1rem;
+}
+
+nav a:hover {
+	background-color: #56202d;
+}
+nav a:visited {
+	color: #ffffff;
+}
+
+.createTrek .container {
+	background-image: url("/images/trek2.jpg");
+	/* width:max-content; */
+	width: 100%;
+	height: 275px;
+	opacity: 0.75;
+	/* position: relative; */
+	text-align: center;
+	/* height: max-content; */
+}
+
+.title {
+	font-family: "Staatliches", cursive;
+	padding-top: 2rem;
+	color: #ffffff;
+	letter-spacing: 0.15rem;
+	/* line-height: 2.5rem; */
+	font-size: 3rem;
+	/* position: absolute; */
+	/* top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.title h2 {
+	font-size: 2.5rem;
+}
+
+.creatorContainer {
+}
+
+.trekCreator {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.whoWeAre {
+}
+.whoWeAreHeader {
+	text-align: center;
+	padding: 2rem;
+}
+
+.whoWeAreRow {
+	display: flex;
+}
+
+.whoWeAreRow li {
+	flex: 1;
+	padding: 1.25rem;
+}
+
+.destinations {
+}
+
+.continentHeader {
+	font-family: "Staatliches", cursive;
+	font-size: 2rem;
+    letter-spacing: .15rem;
+	text-align: center;
+	padding: 1rem;
+    background-color: #ffdeb1;
+
+}
+
+.continentHeader h3 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+}
+
+.continentContainer {
+    background-color: #56202D;
+	display: flex;
+    padding: 2rem;
+}
+
+.continentBlock {
+    background-color: #ffdeb1;
+	width: 300px;
+	overflow: hidden;
+    align-content: space-between;
+	margin: 0;
+	padding: 1rem;
+    text-align: center;
+}
+
+.continentBlock img {
+	display: block;
+	height: 300px;
+}
+
+.continentBlock a {
+    text-decoration: none;
+    color: black;
+    font-family: "Staatliches", cursive;
+    font-size: 2rem;
+    letter-spacing: .15rem;
+    margin: 1rem auto;
+}
+
+#trekInfo {
+	background-color: #ffdeb1;
+}
+
+.infoHeader {
+	font-family: "Staatliches", cursive;
+	font-size: 2rem;
+	letter-spacing: 0.15rem;
+	text-align: center;
+	padding: 1rem;
+}
+
+.infoHeader h3 {
+	font-size: 1.75rem;
+	line-height: 2rem;
+}
+
+.infoContainer {
+	display: flex;
+	flex-direction: row;
+	padding: 2rem;
+	background-color: #d5603f;
+}
+
+.infoList {
+	flex: 2;
+	text-align: center;
+	/* justify-content: space-between; */
+	padding: 0 2rem;
+	background-color: #ffdeb1;
+}
+
+.infoList a {
+	color: black;
+	text-decoration: none;
+}
+
+.infoList a:hover {
+	color: #767E0F;
+}
+
+.infoList ul {
+	text-align: start;
+}
+
+.aboutUsHeader {
+	text-align: center;
+	padding: 2rem;
+}
+footer {
+    text-align: center;
+    font-size: 1.5rem;
+	margin: 0;
+    padding: 2rem;
+    background-color: #767E0F;
+}
