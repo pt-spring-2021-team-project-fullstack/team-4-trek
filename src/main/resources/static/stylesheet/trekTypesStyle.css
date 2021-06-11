@@ -1,0 +1,209 @@
+body, html{
+    background-color: rgb(192, 184, 184);
+    height: 100px;
+}
+.wrapper {
+    /* layout */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+.top-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/snow-forest-3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 50vh;
+}
+.top-text {
+text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+#topper{
+    height:84px;}
+    
+.table {
+    display:table;
+    margin:0 auto;
+    }   
+ul#horizontal-list{
+    list-style: none;
+    padding-top: 10px;
+    
+    }
+ul#horizontal-list li{
+    display: inline;
+    padding: 10px 40px;
+}
+.image-main {
+    height: 80vh;
+    width: 100%;
+}
+.image-main:hover {
+    content: url('/images/water-mountain.jpg');
+    height: 100vh;
+    width: 100%;
+}
+.trek-type-flex-box {
+    background-color: rgb(179, 181, 184);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+.trek-type-flex-box > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 20px;
+  }
+.gallery {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#center {
+    text-align: center;
+ }
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.image-basecamp {
+    height: 23vh;
+    flex-grow: 1;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+.image-hut2hut {
+    height: 23vh;
+    flex-grow: 1;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+.image-dayhike {
+    height: 23vh;
+    flex-grow: 1;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+.image-backpack {
+    height: 23vh;
+    flex-grow: 1;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+.image-llama {
+    height: 23vh;
+    flex-grow: 1;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+.Trek-styles-grid {
+    display: grid;
+    gap: 0;
+    grid-column: span;
+    grid-template-columns: 1fr minmax(min-content, 4fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: 0;
+    padding: 0px;
+    grid-template-areas:
+    "basecamp-style   basecamp-style-text"
+    "hut2hut-style    hut2hut-style-text"
+    "dayhike-style    dayhike-style-text"
+    "backpacker-style backpacker-style-text"
+    "llama-style      llama-style-text"    
+}
+.image-style {
+    max-width: 100%; 
+    height: auto; 
+}
+#basecamp-style {
+    grid-column: 1/2;   
+    grid-row:   1/2;
+  }
+.basecamp-style-text {
+    background-color: #FFDEB1;
+    color:  #56202D;
+    text-align: center;
+    grid-column: 2/3;   
+    grid-row:   1/2;
+}
+#hut2hut-style {
+    height: 5px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.hut2hut-style-text {
+    background-color: #767E0F;
+    color: #56202D;
+    text-align: center;
+    grid-column: 2/3;   
+    grid-row:   2/3;
+}
+#dayhike-style {
+    height: 5px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.dayhike-style-text {
+    background-color:  #FFDEB1;
+    color:  #56202D;
+    text-align: center;
+    grid-column: 2/3;   
+    grid-row: 3/4;
+}
+#backpacker-style {
+    height: 5px;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.backpacker-style-text {
+    background-color: #767E0F;
+    color:  #56202D;
+    text-align: center;
+    grid-column: 2/3;   
+    grid-row: 4/5;
+}
+#llama-style {
+    height: 5px;
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+.llama-style-text {
+    background-color: #FFDEB1;
+    color:  #56202D;
+    text-align: center;
+    grid-column: 2/3;   
+    grid-row: 5/6;
+}
+
+@media only screen and (max-width: 961px) {
+    header {
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+    footer {
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 2rem;
+        color: #767E0F;
+    }
+}
