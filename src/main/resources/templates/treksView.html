@@ -1,28 +1,86 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="/treks.css">
 <head>
     <meta charset="UTF-8">
     <title>TREKS TREKS TREKS!!!</title>
 </head>
 <body>
 
-    <h1>TreksView</h1>
+    <div class="container">
 
-    <div th:each="trek: ${treksModel}">
-        <p th:text=" 'Trek Name: ' + ${trek.trekName}"></p>
-        <p th:text=" 'Continent: ' + ${trek.continent.continentName}"></p>
-        <p th:text=" 'Region: ' + ${trek.region.regionName}"></p>
-        <p th:text=" 'Trek Type: ' + ${trek.trekType.typeName}"></p>
-        <br>
+            <header class="header_class">
+
+        <nav>
+
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Treks</a></li>
+                <li><a href="">Continents</a></li>
+                <li><a href="">Trek Types</a></li>
+                <li><a href="">About Team</a></li>
+            </ul>
+
+        </nav>
+
+            </header>
+
+<!--             <form action="/create-trek" method="POST" class="action_buttons">-->
+
+<!--                <input type="text" name="trekName" placeholder="Name of Trek">-->
+<!--                <input type="text" name="continentName" placeholder="Continent located in?">-->
+<!--                <input type="text" name="regionName" placeholder="Region located in?">-->
+<!--                <input type="text" name="typeName" placeholder="Type of trek?">-->
+
+<!--                <button type="submit">Add a Trek</button>-->
+
+<!--             </form>-->
+
+
+    <div class="test_2">
+        <div class="main_body">
+
+    
+            <!-- <div class="test"> -->
+
+             <div th:each="trek: ${treksModel}" class="treks">
+                <a href="google.com" class="card">
+                <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg);"></div>
+                    <article>
+                    <h1 th:text="${trek.trekName}" class="trek_name"></h1>
+                    <p th:text=" 'Continent: ' + ${trek.continent.continentName}" class="continent_name"></p>
+                    <p th:text=" 'Region: ' + ${trek.region.regionName}" class="region_name"></p>
+                    <span th:text=" 'Trek Type: ' + ${trek.trekType.typeName}" class="type_name"></span>
+                    </article>
+                     <br>
+                    </a>
+            </div>
+
+                     <br>
+
+          <!-- </div>  -->
+
+        </div>
     </div>
-    <br>
-    <form action="/create-trek" method="POST">
-        <input type="text" name="trekName" placeholder="What is the Name of the Trek">
-        <input type="text" name="continentName" placeholder="Which continent is the trek located in?">
-        <input type="text" name="regionName" placeholder="Which region is the trek located in?">
-        <input type="text" name="typeName" placeholder="What type of trek is it?">
 
-            <button type="submit">Add a Trek</button>
-    </form>
+          <div class="support-grid"></div>
+
+<!--  <div class="band">-->
+<!--    <div class="item-1">-->
+<!--          <a href="https://design.tutsplus.com/articles/international-artist-feature-malaysia&#45;&#45;cms-26852" class="card">-->
+<!--            <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg);"></div>-->
+<!--            <article>-->
+<!--              <h1>International Artist Feature: Malaysia</h1>-->
+<!--              <span>Mary Winkler</span>-->
+<!--            </article>-->
+<!--          </a>-->
+<!--    </div>-->
+<!--  </div>-->
+    
+    
+
+        
+
+    </div>
 </body>
 </html>
