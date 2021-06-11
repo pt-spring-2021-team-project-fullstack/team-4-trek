@@ -25,13 +25,16 @@ h2 {
     font-size: 24pt;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: auto;
+    padding-top: .55em;
 }
 
 h3 {
-    padding-top: .25em;
+    padding-top: 1em;
     font-size: 14pt;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: .15em;
 }
+
 
 section {
     margin: 0 5rem;
@@ -45,7 +48,7 @@ section {
 
 .container2 {
     background-color: #56202D;
-    border-radius: 35px;
+    border-radius: 15px;
     margin: 2.25rem auto;
     margin-top: 5rem;
     max-width:max-content;
@@ -59,8 +62,8 @@ section {
 
 .container2_image {
     border-radius: 15px;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin-top: 0;
 }
 
@@ -73,15 +76,15 @@ section {
     max-height: 50rem;
     margin-bottom: 2em;
     width: 90%;
-    padding: 2em;
+    padding: 1em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
 .container3_image {
     border-radius: 15px;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin-top: 0;
 }
 
@@ -101,13 +104,13 @@ section {
 
 .container4_image {
     border-radius: 15px;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin-top: 0;
 }
 
 .container5 {
-    border-radius: 35px;
+    border-radius: 15px;
     background-color: #767E0F;
     margin: 2.25rem auto;
     margin-top: .5rem;
@@ -122,13 +125,13 @@ section {
 
 .container5_image {
     border-radius: 15px;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin-top: 0;
 }
 
 .container6 {
-    border-radius: 35px;
+    border-radius: 15px;
     background-color: #FFDEB1;
     margin: 2.25rem auto;
     margin-top: .5rem;
