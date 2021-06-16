@@ -23,16 +23,18 @@ public class Trek {
 
     @ManyToOne
     private TrekType trekType;
+    private String imageUrl;
 
     protected Trek(){
 
     }
 
-    public Trek(String trekName, Continent continent, Region region, TrekType trekType) {
+    public Trek(String trekName, Continent continent, Region region, TrekType trekType, String imageUrl) {
         this.trekName = trekName;
         this.continent = continent;
         this.region = region;
         this.trekType = trekType;
+        this.imageUrl = imageUrl;
     }
 
     public Long getId() {
@@ -51,6 +53,10 @@ public class Trek {
 
     public TrekType getTrekType() {
         return trekType;
+    }
+
+    public String getImageUrl(){
+        return imageUrl;
     }
 
     @Override
