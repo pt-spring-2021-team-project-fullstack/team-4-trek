@@ -28,6 +28,13 @@ public class TrekController {
         return "treksView";
     }
 
+    @RequestMapping("/regions")
+    public String displayRegions(Model model){
+        model.addAttribute("regionsModel", regionRepo.findAll());
+        model.addAttribute("treksModel", trekRepo.findAll());
+        return "regions";
+    }
+
     @PostMapping("/create-trek")
     public String createOwnTrek(@RequestParam String trekName, @RequestParam String continentName, @RequestParam String regionName, @RequestParam String typeName){
 

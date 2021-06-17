@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<link rel="stylesheet" href="/regionsStyle.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Regions</title>
+</head>
+<body>
+<div id="wrapper">
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" target="#">HOME</a>
+            </li>
+            <li>
+                <a href="trekTypes.html" target="_self">INFORMATION</a>
+            </li>
+            <li>
+                <a href="#continents" target="_self">CONTINENTS</a>
+            </li>
+            <li>
+                <a href="localhost:8080/regions" target="_blank"
+                >REGIONS</a
+                >
+            </li>
+            <li>
+                <a href="localhost:8080/treks" target="_blank">TREKS</a>
+            </li>
+
+            <li>
+                <a href="about.html" target="_blank">ABOUT TEAM</a>
+            </li>
+        </ul>
+    </nav>
+        <main>
+            <header>
+                <h1>Regions</h1>
+                <h2>Navigate All of the Regions Within A Continent</h2>
+            </header>
+            <div class="continent">
+                <h3>Africa</h3>
+                <div class="container" th:each="region: ${regionsModel}">
+                    <p th:text="${region.regionName}">
+                    </p>
+                </div>
+            </div>
+            <div class="continent">
+                <h3>Antarctica</h3>
+                <div class="container" th:each="region: ${regionsModel}">
+                    <p th:text="${region.regionName}">
+                    </p>
+                </div>
+            </div>
+            <div class="continent">
+                <h3>Asia</h3>
+                <div class="container" th:each="region: ${regionsModel}">
+                    <p th:text="${region.regionName}">
+                    </p>
+                </div>
+            </div>
+            <div class="continent">
+                <h3>Australia</h3>
+                <div class="container" th:each="region: ${regionsModel}">
+                    <p th:text="${region.regionName}">
+                    </p>
+                </div>
+            </div>
+            <div class="continent">
+                <h3>Europe</h3>
+                <div class="container" th:each="region: ${regionsModel}">
+                    <p th:text="${region.regionName}">
+                    </p>
+                </div>
+            </div>
+            <div class="continent">
+                <h3>N America</h3>
+                <div class="container" th:each="region: ${regionsModel}">
+                    <p th:text="${region.regionName}">
+                    </p>
+                </div>
+            </div>
+            <div class="continent">
+                <h3>S America</h3>
+                <div class="container" th:each="region: ${regionsModel}">
+                    <p th:text="${region.regionName}">
+                    </p>
+                </div>
+            </div>
+        </main>
+</div>
+
+
+</body>
+</html>
