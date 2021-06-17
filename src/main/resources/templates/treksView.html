@@ -5,82 +5,72 @@
     <meta charset="UTF-8">
     <title>TREKS TREKS TREKS!!!</title>
 </head>
-<body>
 
+<body>
     <div class="container">
 
-            <header class="header_class">
+        <header class="header_class">
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/treks">Treks</a></li>
+                    <li><a href="#">Continents</a></li>
+                    <li><a href="/trekTypes.html">Information</a></li>
+                    <li><a href="/about.html">About Team</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <nav>
+        <div class="test_2">
 
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Treks</a></li>
-                <li><a href="">Continents</a></li>
-                <li><a href="">Trek Types</a></li>
-                <li><a href="">About Team</a></li>
-            </ul>
-
-        </nav>
-
-            </header>
-
-<!--             <form action="/create-trek" method="POST" class="action_buttons">-->
-
-<!--                <input type="text" name="trekName" placeholder="Name of Trek">-->
-<!--                <input type="text" name="continentName" placeholder="Continent located in?">-->
-<!--                <input type="text" name="regionName" placeholder="Region located in?">-->
-<!--                <input type="text" name="typeName" placeholder="Type of trek?">-->
-
-<!--                <button type="submit">Add a Trek</button>-->
-
-<!--             </form>-->
-
-
-    <div class="test_2">
-        <div class="main_body">
-
-    
-            <!-- <div class="test"> -->
-
-             <div th:each="trek: ${treksModel}" class="treks">
-                <a href="google.com" class="card">
-                <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg);"></div>
-                    <article>
-                    <h1 th:text="${trek.trekName}" class="trek_name"></h1>
-                    <p th:text=" 'Continent: ' + ${trek.continent.continentName}" class="continent_name"></p>
-                    <p th:text=" 'Region: ' + ${trek.region.regionName}" class="region_name"></p>
-                    <span th:text=" 'Trek Type: ' + ${trek.trekType.typeName}" class="type_name"></span>
-                    </article>
-                     <br>
-                    </a>
+            <div class="top_image2">
+                <div class="top_text2">
+                    <h1>ALL AVAILABLE TREKS</h1>
+                </div>
             </div>
 
-                     <br>
+            <div class="main_body">
 
-          <!-- </div>  -->
+                <div th:each="trek: ${treksModel}" class="treks">
+                    <a href="https://www.google.com" class="card">
+                        <div class="thumb" th:style=" 'background-image: url(' + ${trek.imageUrl} + ');'"></div>
+                        <article>
+                        <h1 th:text="${trek.trekName}" class="trek_name"></h1>
+                        <p th:text=" 'Continent: ' + ${trek.continent.continentName}" class="continent_name"></p>
+                        <p th:text=" 'Region: ' + ${trek.region.regionName}" class="region_name"></p>
+                        <span th:text=" 'Trek Type: ' + ${trek.trekType.typeName}" class="type_name"></span>
+                        </article>
+                        <br>
+                        </a>
+                </div>
+                        <br>
 
+            </div>
+            <div class="bottom_1">
+
+                <details>
+                    <summary>CREATE YOUR OWN TREK!!!</summary>
+                    <form action="/create-trek" method="POST" class="action_buttons">
+                        <input type="text" name="trekName" placeholder="Name of Trek">
+                        <select name="continentName" >
+                            <option th:each="continent: ${continentModel}" th:value="${continent.continentName}" th:text="${continent.continentName}"></option>
+                        </select>
+                        <select name="regionName" >
+                            <option th:each="region: ${regionModel}" th:value="${region.regionName}" th:text="${region.regionName}"></option>
+                        </select>
+                        <select name="typeName" >
+                            <option th:each="trekType: ${typeModel}" th:value="${trekType.typeName}" th:text="${trekType.typeName}"></option>
+                        </select>
+                        <input type="hidden" name="imageUrl" value="image url">
+
+                        <button type="submit">Add a Trek</button>
+                    </form>
+                </details>
+
+            </div>
         </div>
-    </div>
-
-          <div class="support-grid"></div>
-
-<!--  <div class="band">-->
-<!--    <div class="item-1">-->
-<!--          <a href="https://design.tutsplus.com/articles/international-artist-feature-malaysia&#45;&#45;cms-26852" class="card">-->
-<!--            <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg);"></div>-->
-<!--            <article>-->
-<!--              <h1>International Artist Feature: Malaysia</h1>-->
-<!--              <span>Mary Winkler</span>-->
-<!--            </article>-->
-<!--          </a>-->
-<!--    </div>-->
-<!--  </div>-->
-    
-    
-
-        
 
     </div>
 </body>
+
 </html>

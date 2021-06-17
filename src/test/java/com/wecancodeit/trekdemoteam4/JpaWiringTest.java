@@ -51,9 +51,9 @@ public class JpaWiringTest {
         trekTypeRepo.save(llamaTrack);
 
 
-        Trek trek1 = new Trek("Test 1",nA,north,backPack);
-        Trek trek2 = new Trek("Test 2",nA,south,llamaTrack);
-        Trek trek3 = new Trek("Test 3",sA,south,llamaTrack);
+        Trek trek1 = new Trek("Test 1",nA,north,backPack, "static/image/llama-trek-2-458x300.jpg");
+        Trek trek2 = new Trek("Test 2",nA,south,llamaTrack, "static/image/llama-trek-2-458x300.jpg");
+        Trek trek3 = new Trek("Test 3",sA,south,llamaTrack, "static/image/llama-trek-2-458x300.jpg");
 
         trekRepo.save(trek1);
         trekRepo.save(trek2);

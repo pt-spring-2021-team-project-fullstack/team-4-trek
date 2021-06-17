@@ -25,11 +25,14 @@ public class TrekController {
     @RequestMapping("/treks")
     public String displayTreks(Model model){
         model.addAttribute("treksModel",trekRepo.findAll());
+        model.addAttribute("continentModel",continentRepo.findAll());
+        model.addAttribute("regionModel",regionRepo.findAll());
+        model.addAttribute("typeModel",trekTypeRepo.findAll());
         return "treksView";
     }
 
     @PostMapping("/create-trek")
-    public String createOwnTrek(@RequestParam String trekName, @RequestParam String continentName, @RequestParam String regionName, @RequestParam String typeName){
+    public String createOwnTrek(@RequestParam String trekName, @RequestParam String continentName, @RequestParam String regionName, @RequestParam String typeName, @RequestParam String imageUrl){
 
         Continent continentToAdd;
         Optional<Continent> continentToAddOpt = continentRepo.findByContinentName(continentName);
@@ -64,7 +67,7 @@ public class TrekController {
         Optional<Trek> trekToAddOpt = trekRepo.findByTrekName(trekName);
 
         if (trekToAddOpt.isEmpty()){
-            Trek trekToAdd = new Trek(trekName,continentToAdd,regionToAdd,trekTypeToAdd);
+            Trek trekToAdd = new Trek(trekName,continentToAdd,regionToAdd,trekTypeToAdd,imageUrl);
             trekRepo.save(trekToAdd);
         }
 
