@@ -81,30 +81,35 @@ ul#horizontal-list li{
     flex-grow: 1;
     object-fit: cover;
     vertical-align: bottom;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 .image-hut2hut {
     height: 23vh;
     flex-grow: 1;
     object-fit: cover;
     vertical-align: bottom;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 .image-dayhike {
     height: 23vh;
     flex-grow: 1;
     object-fit: cover;
     vertical-align: bottom;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 .image-backpack {
     height: 23vh;
     flex-grow: 1;
     object-fit: cover;
     vertical-align: bottom;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 .image-llama {
     height: 23vh;
     flex-grow: 1;
     object-fit: cover;
     vertical-align: bottom;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 .Trek-styles-grid {
     display: grid;
@@ -117,12 +122,12 @@ ul#horizontal-list li{
 .image-style {
     max-width: 100%; 
     height: auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 
 }
 #basecamp-style {
     grid-column: 1/2;   
     grid-row:   1/2;
-
   }
 .basecamp-style-text {
     background-color: #FFDEB1;
