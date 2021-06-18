@@ -94,11 +94,11 @@ nav{
    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(images/regionHeader.jpg);
    background-size: cover;
    background-position-y: 91%;
-   min-height:300px;
+   min-height:325px;
    font-size: 2rem;
    text-align: center;
 	color: #ffffff;
-   margin-top: 4rem;
+   margin-top:3rem;
    margin-bottom: 1.5rem;
 }
 
@@ -106,9 +106,10 @@ nav{
 .container {
 	display: flex;
 	flex-direction: column;
-	margin: 1rem 0;
+	margin: 1rem 1.5rem;
 	padding: 1rem;
    min-height: 200px;
+   border-radius: 25px;
    box-shadow: 2px 1px 11px 2px rgba(0,0,0,0.75);
    -webkit-box-shadow: 2px 1px 11px 2px rgba(0,0,0,0.75);
    -moz-box-shadow: 2px 1px 11px 2px rgba(0,0,0,0.75);
@@ -117,6 +118,7 @@ nav{
 .container h2 {
 	color: #ffffff;
 	background-color: hsla(0, 50%, 0%, 0.33);
+   border-radius: 5px;
 	flex: 1.5;
 	text-align: center;
 	align-self: center;
@@ -135,6 +137,7 @@ nav{
 	justify-content: center;
    letter-spacing: .1rem;
 	background-color: hsla(0, 100%, 0%, 0.5);
+   border-radius: 5px;
    /* border-radius: 100px; */
 	display: flex;
 	flex: 4;
@@ -156,6 +159,7 @@ nav{
 	text-decoration: none;
    background: none;
    border: 2px solid;
+   border-radius: 5px;
    font: inherit;
    line-height: 1.15;
    margin: 0 1rem;
@@ -165,7 +169,7 @@ nav{
 
 .container a:hover {
 	position: relative;
-	border-bottom: 1px solid white;
+   font-weight: 800;
 }
 
 
