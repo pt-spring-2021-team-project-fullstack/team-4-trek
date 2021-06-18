@@ -18,58 +18,29 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<nav>
-				<ul>
-					<li>
-						<a href="index.html" target="#">HOME</a>
-					</li>
-					<li>
-						<a href="trekTypes.html" target="_self">INFORMATION</a>
-					</li>
-					<li>
-						<a href="#continents" target="_self">CONTINENTS</a>
-					</li>
-					<li>
-						<a href="localhost:8080/regions" target="_blank"
-							>REGIONS</a
-						>
-					</li>
-					<li>
-						<a href="localhost:8080/treks" target="_blank">TREKS</a>
-					</li>
-
-					<li>
-						<a href="about.html" target="_blank">ABOUT TEAM</a>
-					</li>
-				</ul>
-			</nav>
+			<div class="topnav">
+				<a class="active" href="index.html">Home</a>
+				<a href="trekTypes.html">Information</a>
+				<a href="#continents">Continents</a>
+				<a href="regions.html">Regions</a>
+				<a href="/treks">Treks</a>
+				<a href="blog.html">Blog</a>
+				<a href="testimonial.html">Reviews</a>
+				<a href="about.html">About Us</a>
+				<div class="search-container">
+				<form action="/action_page.php">
+				<input type="text"placeholder="Search.."name="search">
+				<button type="submit">Submit</button>
+				</form>
+				</div>
+				</div>
 			<main>
-				<section class="createTrek">
-					<div class="container">
-						<!-- <img src="/images/trek1.jpg" alt="" /> -->
-						<div class="title">
+				<section id="top"></section>
+				<section>
+						<div id="title">
 							<h1>WORLD CLASS TREKS</h1>
 							<h2>Your Journey Begins Here</h2>
 						</div>
-					</div>
-					<div class="creatorContainer">
-						<div class="trekCreator">
-							<label for="destinations">Destination</label>
-							<select name="destinations" id="">
-								<option value="africa">Africa</option>
-								<option value="antarctica">Antarctica</option>
-								<option value="asia">Asia</option>
-								<option value="europe">Europe</option>
-								<option value="northAmerica">
-									North America
-								</option>
-								<option value="southAmerica">
-									South America
-								</option>
-								<option value="australia">Australia</option>
-							</select>
-						</div>
-					</div>
 				</section>
 				<!-- <section class="whoWeAre">
                     <div>
@@ -118,7 +89,8 @@
                 </section> -->
 				<section id="trekInfo">
 					<div class="infoHeader">
-						<h2>New To Trekking?</h2>
+						<h2><a href="trekTypes.html">New To Trekking?</a>
+	</h2>
 						<h3>
 							Here are a few resources to help you get familiar
 							with trekking
@@ -126,6 +98,7 @@
 					</div>
 					<div class="infoContainer">
 						<div class="infoList">
+							<a href="trekTypes.html#trekTypeLink">
 							<h3>Terrains</h3>
 							<ul>
 								<li>Desert</li>
@@ -135,7 +108,9 @@
 								<li>River</li>
 							</ul>
 						</div>
+					</a>
 						<div class="infoList">
+							<a href="trekTypes.html#trekTypeLink">
 							<h3>Types</h3>
 							<ul>
 								<li>Guided Backpacking Trips</li>
@@ -149,8 +124,11 @@
 								<li>Family Friendly Trips</li>
 							</ul>
 						</div>
+					</a>
+						
 						<div class="infoList">
-							<h3>Difficulties</h3>
+							<a href="trekTypes.html#trekDifficultyLink">
+							<h3> Difficulties</h3>
 							<ul>
 								<li>Beginner</li>
 								<li>Easy</li>
@@ -158,7 +136,9 @@
 								<li>Hard</li>
 								<li>Very Hard</li>
 							</ul>
+						</a>
 						</div>
+					
 					</div>
 				</section>
 				<section id="continents">
@@ -172,66 +152,85 @@
 					<div class="continentContainer">
 						<div class="continentBlock">
 							<a
-								href="localhost:8080/continent/africa"
+								href="regions.html#africa"
 								target="#"
 							>
 								<img src="images/africa.jpg" alt="" />
+								<br>
 								AFRICA
 							</a>
 						</div>
 						<div class="continentBlock">
 							<a
-								href="localhost:8080/continent/antarctica"
+								href="regions.html#antarctica"
 								target="#"
 							>
 								<img src="images/antarctica.jpg" alt="" />
+								<br>
 								ANTARCTICA
 							</a>
 						</div>
 						<div class="continentBlock">
-							<a href="localhost:8080/continent/asia" target="#">
+							<a href="regions.html#asia" target="#">
 								<img src="images/asia.jpg" alt="" />
+								<br>
 								ASIA
 							</a>
 						</div>
 						<div class="continentBlock">
 							<a
-								href="localhost:8080/continent/europe"
+								href="regions.html#australia"
+								target="#"
+							>
+								<img src="images/australia.jpg" alt="" />
+								<br>
+								AUSTRALIA
+							</a>
+						</div>
+						<div class="continentBlock">
+							<a
+								href="regions.html#europe"
 								target="#"
 							>
 								<img src="images/europe.jpg" alt="" />
+								<br>
 								EUROPE
 							</a>
 						</div>
 						<div class="continentBlock">
 							<a
-								href="localhost:8080/continent/northAmerica"
+								href="regions.html#nAmerica"
 								target="#"
 							>
 								<img src="images/nAmerica.jpg" alt="" />
+								<br>
 								NORTH AMERICA
 							</a>
 						</div>
 						<div class="continentBlock">
 							<a
-								href="localhost:8080/continent/southAmerica"
+								href="regions.html#sAmerica"
 								target="#"
 							>
 								<img src="images/sAmerica.jpg" alt="" />
+								<br>
 								SOUTH AMERICA
-							</a>
-						</div>
-						<div class="continentBlock">
-							<a
-								href="localhost:8080/continent/australia"
-								target="#"
-							>
-								<img src="images/australia.jpg" alt="" />
-								AUSTRALIA
 							</a>
 						</div>
 					</div>
 				</section>
+				<section class="testimonial-blurb">
+					<div class="testimonial-image">
+							<div class="testimonial-text">
+									<h2>WE WANT YOU SAFE AND SMILING</h2>
+									<p>JacKr Enterprises work around the clock to ensure your experience is second to NONE! It's out pleasure to go above and beyond the "other guys"</p>
+							</div>
+							<div id="first-box">
+											<p class="testimonial-quote">"THIS TRIP CHANGED MY LIFE. I NEVER THOUGHT I COULD DO SOMETHING ON MY BUCKET LIST - FIGURED I WAS TOO OLD AND TOO TIRED. I WAS WRONG! JACKR ENTERPRISES MATCHED ME WITH A JOURNEY SO CAPTIVATING AND DELIGHTFUL, THAT I WILL CARRY THESE MEMORIES WITH ME FOR THE REST OF MY LIFE." </p>
+									<p class="testimonial-quote">-Jean Hart</p>
+									<a href="testimonial.html" target="_blank"><button>VIEW OTHER TESTIMONIALS</button></a>
+					</div>
+			</section>
 				<!-- <section class="aboutUs">
                     <div class="aboutUsHeader">
                         <a href="aboutUs.html">
