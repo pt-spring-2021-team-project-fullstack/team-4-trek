@@ -26,18 +26,84 @@ body, html{
     #topper{
     height:84px;
     }
-    .table {
-    display:table;
-    margin:0 auto;
-    }
-    ul#horizontal-list{
-    list-style: none;
-    padding-top: 10px;
-    }
-    ul#horizontal-list li{
-    display: inline;
-    padding: 10px 40px;
-    }
+  nav{
+      flex: 1;
+      text-align: center;
+      background: #eee;
+      flex-flow: row;
+      display: flex;
+      height: 3em;
+      width: 100%;
+      float:none;
+      clear: both;
+      position: fixed;
+      overflow: hidden;
+      border-bottom-style: dotted;
+      }
+      nav ul{
+          display: inline-block;
+          list-style-type: none;
+          text-align: center;
+          justify-content: center;
+          width: 100%;
+          #F0ECE9;
+      }
+      nav ul li{
+          display: inline-block;
+          margin-right: 20px;
+          text-align: center;
+          font-weight: bold;
+          justify-content: center;
+          float: none;
+          color: #444;
+      }
+      nav a {
+      color: #031136;
+      padding: .5em 3em;
+      text-decoration: none;
+          justify-content: center;
+          text-align: center;
+          position: relative;
+            z-index: 2;
+            text-decoration: none;
+            color: #444;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+      }
+      nav a:hover {
+      border-bottom: 0px; color: #F0ECE9;}
+      nav   ul li:first-child a{ border:none; }
+      nav   ul li:nth-child(2) a{ border-left: 10px solid #3895FF; }
+      nav   ul li:nth-child(3) a{ border-left: 10px solid #3358FF; }
+      nav   ul li:nth-child(4) a{ border-left: 10px solid #0D00FF; }
+      nav   ul li:nth-child(5) a{ border-left: 10px solid #3400AD; }
+      nav   ul li:nth-child(6) a{ border-left: 10px solid #4400B3; }
+      nav   ul li:nth-child(7) a{ border-left: 10px solid #5600B8; }
+      nav   ul li:nth-child(7) a{ border-left: 10px solid #740063; }
+      nav   ul li:last-child a{ border-left: 10px solid #822FAF; }
+      }
+      nav a : after {
+        content: "";
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 0px;
+        position: absolute;
+        transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        z-index: -1;
+      }
+      nav a:hover:after{ width: 100%; }
+      nav   ul li:first-child a{ border:none; }
+      nav   ul li:nth-child(2) a{ border-left: 10px solid #3895FF; }
+      nav   ul li:nth-child(3) a{ border-left: 10px solid #3358FF; }
+      nav   ul li:nth-child(4) a{ border-left: 10px solid #0D00FF; }
+      nav   ul li:nth-child(5) a{ border-left: 10px solid #3400AD; }
+      nav   ul li:nth-child(6) a{ border-left: 10px solid #4400B3; }
+      nav   ul li:nth-child(7) a{ border-left: 10px solid #5600B8; }
+      nav   ul li:nth-child(7) a{ border-left: 10px solid #740063; }
+      nav   ul li:last-child a{ border-left: 10px solid #822FAF; }
     .top-gallery {
     align-items: center;
     display: flex;
@@ -56,7 +122,7 @@ body, html{
     margin-bottom: 50px;
     margin-left: -20px;
     margin-right: -20px;
-    margin-top: -5px;
+    padding-bottom: 20px;
     }
     .top-blogs {
     align-items: center;
@@ -143,6 +209,7 @@ body, html{
     width:auto;
     }
     .testimonial-image {
+    align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/testimonial-2.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -152,15 +219,16 @@ body, html{
     }
     .testimonial-text {
     color: white;
+    font-size: 20px;
     left: 50%;
     position: absolute;
     text-align: center;
     top: 20%;
     transform: translate(-50%, -50%);
-    font-size: 20px;
     }
     #first-box {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: black;
     background: #2F4F4F;
     margin: auto 5rem;
     overflow: hidden;
@@ -170,11 +238,10 @@ body, html{
     top: 40%;
     }
     .testimonial-quote {
+    align-self: center;
     color: #DCDCDC;
     margin: 15px;
-    align-self: center;
     font: 1rem/1.2 Georgia, serif;
-
     }
     button {
     background: #808080;
@@ -185,19 +252,21 @@ body, html{
     background-position: center;
     padding-top: 50px;
     }
-     blockquote {
-     margin: 1em;
-     }
-     figcaption {
-     align-self: center;
-     margin: 1em;
-     }
-    footer {
-    color: #767E0F;
-    margin: 0;
-    padding: 2rem;
-    text-align: center;
+    blockquote {
+    margin: 1em;
     }
+    figcaption {
+    align-self: center;
+    margin: 1em;
+    }
+   footer {
+   margin-top: 2em;
+   margin-bottom: 1em;
+   background: #56202D;
+   color: #ffffff;
+   list-style-type: none;
+   text-align: center;
+   }
     @media only screen and (max-width: 961px) {
     header {
     display: flex;
