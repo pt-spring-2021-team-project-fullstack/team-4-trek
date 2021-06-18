@@ -91,7 +91,7 @@ nav{
 
 
 #title {
-   background-image: url(images/regionHeader.jpg);
+   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(images/regionHeader.jpg);
    background-size: cover;
    background-position-y: 91%;
    min-height:300px;
