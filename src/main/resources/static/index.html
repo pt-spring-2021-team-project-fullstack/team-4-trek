@@ -18,57 +18,25 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<nav>
-				<ul>
-					<li>
-						<a href="index.html" target="#">HOME</a>
-					</li>
-					<li>
-						<a href="trekTypes.html" target="_self">INFORMATION</a>
-					</li>
-					<li>
-						<a href="localhost:8080/treks" target="_blank">TREKS</a>
-					</li>
-					<li>
-						<a href="#continents" target="_self">CONTINENTS</a>
-					</li>
-					<li>
-						<a href="regions.html" target="_blank">REGIONS</a>
-					</li>
-					<li><a href="#">REVIEWS</a></li>
-					<li><a href="#">BLOG</a></li>
-					<li>
-						<a href="about.html" target="_blank">ABOUT TEAM</a>
-					</li>
-				</ul>
-			</nav>
+      <nav>
+        <ul id= "navigationBar">
+            <li><a href="index.html" target="_blank">HOME</a></li>
+            <li><a href="trekTypes.html" target="_self">INFORMATION</a></li>
+            <li><a href="localhost:8080/treks" target="_blank">TREKS</a></li>
+            <li><a href="#continents" target="_self">CONTINENTS</a></li>
+            <li><a href="regions.html" target="_blank">REGIONS</a></li>
+            <li><a href="testimonials.html" target="_blank">REVIEWS</a></li>
+            <li><a href="blog.html" target="_self">BLOG</a></li>
+            <li><a href="about.html" target="_blank">ABOUT US</a></li>
+        </ul>
+    </nav>
 			<main>
-				<section class="createTrek">
-					<div class="container">
-						<!-- <img src="/images/trek1.jpg" alt="" /> -->
-						<div class="title">
+				<section id="top"></section>
+				<section>
+						<div id="title">
 							<h1>WORLD CLASS TREKS</h1>
 							<h2>Your Journey Begins Here</h2>
 						</div>
-					</div>
-					<div class="creatorContainer">
-						<div class="trekCreator">
-							<label for="destinations">Destination</label>
-							<select name="destinations" id="">
-								<option value="africa">Africa</option>
-								<option value="antarctica">Antarctica</option>
-								<option value="asia">Asia</option>
-								<option value="europe">Europe</option>
-								<option value="northAmerica">
-									North America
-								</option>
-								<option value="southAmerica">
-									South America
-								</option>
-								<option value="australia">Australia</option>
-							</select>
-						</div>
-					</div>
 				</section>
 				<!-- <section class="whoWeAre">
                     <div>
@@ -171,62 +139,69 @@
 					<div class="continentContainer">
 						<div class="continentBlock">
 							<a
-								href="localhost:8080/continent/africa"
+								href="regions.html#africa"
 								target="#"
 							>
 								<img src="images/africa.jpg" alt="" />
+								<br>
 								AFRICA
 							</a>
 						</div>
 						<div class="continentBlock">
 							<a
-								href="localhost:8080/continent/antarctica"
+								href="regions.html#antarctica"
 								target="#"
 							>
 								<img src="images/antarctica.jpg" alt="" />
+								<br>
 								ANTARCTICA
 							</a>
 						</div>
 						<div class="continentBlock">
-							<a href="localhost:8080/continent/asia" target="#">
+							<a href="regions.html#asia" target="#">
 								<img src="images/asia.jpg" alt="" />
+								<br>
 								ASIA
 							</a>
 						</div>
 						<div class="continentBlock">
 							<a
-								href="localhost:8080/continent/europe"
+								href="regions.html#australia"
+								target="#"
+							>
+								<img src="images/australia.jpg" alt="" />
+								<br>
+								AUSTRALIA
+							</a>
+						</div>
+						<div class="continentBlock">
+							<a
+								href="regions.html#europe"
 								target="#"
 							>
 								<img src="images/europe.jpg" alt="" />
+								<br>
 								EUROPE
 							</a>
 						</div>
 						<div class="continentBlock">
 							<a
-								href="localhost:8080/continent/northAmerica"
+								href="regions.html#nAmerica"
 								target="#"
 							>
 								<img src="images/nAmerica.jpg" alt="" />
+								<br>
 								NORTH AMERICA
 							</a>
 						</div>
 						<div class="continentBlock">
 							<a
-								href="localhost:8080/continent/southAmerica"
+								href="regions.html#sAmerica"
 								target="#"
 							>
 								<img src="images/sAmerica.jpg" alt="" />
+								<br>
 								SOUTH AMERICA
-							</a>
-						</div>
-						<div class="continentBlock">
-							<a
-								href="localhost:8080/continent/australia"
-								target="#"
-							>
-								<img src="images/australia.jpg" alt="" />
-								AUSTRALIA
 							</a>
 						</div>
 					</div>
