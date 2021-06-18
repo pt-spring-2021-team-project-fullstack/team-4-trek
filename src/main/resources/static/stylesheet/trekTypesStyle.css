@@ -2,6 +2,7 @@ body, html{
     background-color: rgb(192, 184, 184);
     height: 100px;
     font-size: 20px;
+    font-family: san-serif;
 }
 .wrapper {
     width: 100%;
@@ -46,26 +47,13 @@ ul#horizontal-list li{
     height: 80vh;
     width: 100%;
 }
-.trek-type-flex-box {
-    background-color: rgb(179, 181, 184);
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-.trek-type-flex-box > div {
-    background-color: #f1f1f1;
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 20px;
-  }
 .gallery {
     align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 9px;
 }
 #center {
     text-align: center;
@@ -111,83 +99,107 @@ ul#horizontal-list li{
     vertical-align: bottom;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+.Trekking-what {
+background-color: #ACA5A5;
+margin: -6px;
+padding-top: 1px;
+padding-bottom: 8px;
+color: #332C23;
+}
+.tw-text {
+text-align: center;
+list-style: none;
+color: #332C23;
+}
+.Trekking-type {
+background-color: #999393;
+margin: -10px;
+margin-bottom: 1px;
+padding: 10px;
+padding-top: 6px;
+}
 .Trek-styles-grid {
+align-items: center;
     display: grid;
     gap: 0;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
     margin: 0;
-    padding: 0px;
+    padding: 10px;
 }
-.image-style {
-    max-width: 100%; 
-    height: auto;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-
-}
-#basecamp-style {
-    grid-column: 1/2;   
-    grid-row:   1/2;
-  }
 .basecamp-style-text {
-    background-color: #FFDEB1;
-    color:  #56202D;
-    text-align: center;
-    grid-column: 2/3;   
-    grid-row:   1/2;
-    font-size: 20px;
 
-}
-#hut2hut-style {
+    color: #332C23;
+    text-align: center;
     grid-column: 1/2;
-    grid-row: 2/3;
-    height: 100%
+    grid-row:   2/3;
+    padding: 10px;
+}
+.image-basecamp-style {
+grid-column: 1/2;
+grid-row:   1/2;
+height: 25vh;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+flex-grow: 1;
+object-fit: cover;
+vertical-align: bottom;
 }
 .hut2hut-style-text {
-    background-color: #767E0F;
-    color: #56202D;
+    color: #332C23;
     text-align: center;
     grid-column: 2/3;   
     grid-row:   2/3;
-    font-size: 20px;
+    padding: 10px;
+    justify-items: center;
 }
-#dayhike-style {
-    grid-column: 1/2;
-    grid-row: 3/4;
+.image-hut2hut-style {
+grid-column: 2/3;
+    grid-row: 2/3;
+  height: 25vh;
+  text-align: center;
 }
 .dayhike-style-text {
-    background-color:  #FFDEB1;
-    color:  #56202D;
+    color: #332C23;
     text-align: center;
-    grid-column: 2/3;   
-    grid-row: 3/4;
-    font-size: 20px;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    padding: 10px;
+    justify-items: center;
 }
-#backpacker-style {
-    grid-column: 1/2;
-    grid-row: 4/5;
+.image-dayhike-style {
+grid-column: 3/4;
+grid-row: 1/2;
+height: 25vh;
+text-align: center;
 }
 .backpacker-style-text {
-    background-color: #767E0F;
-    color:  #56202D;
+    color: #332C23;
     text-align: center;
-    grid-column: 2/3;   
-    grid-row: 4/5;
-    font-size: 20px;
-}
-#llama-style {
     grid-column: 1/2;
-    grid-row: 5/6;
+    grid-row: 4/5;
+    padding: 10px;
+    justify-items: center;
+}
+.image-backpacker-style {
+grid-column: 1/2;
+grid-row: 3/4;
+height: 25vh;
+text-align: center;
 }
 .llama-style-text {
-    background-color: #FFDEB1;
-    color:  #56202D;
+    color: #332C23;
     text-align: center;
-    grid-column: 2/3;   
-    grid-row: 5/6;
-    font-size: 20px;
+    grid-column: 3/4;
+    grid-row: 4/5;
+    padding: 10px;
+    justify-items: center;
 }
-
+.image-llama-style {
+grid-column: 3/4;
+grid-row: 3/4;
+height: 25vh;
+text-align: center;
+}
 @media only screen and (max-width: 961px) {
     header {
       display: flex;
@@ -197,11 +209,10 @@ ul#horizontal-list li{
       display: flex;
       flex-direction: column;
     }
-    footer {
-        text-align: center;
-        font-size: 1.5rem;
-        margin: 0;
-        padding: 2rem;
-        color: #767E0F;
-    }
 }
+footer {
+         text-align: center;
+         margin: 0;
+         padding: 2rem;
+         color: #767E0F;
+     }

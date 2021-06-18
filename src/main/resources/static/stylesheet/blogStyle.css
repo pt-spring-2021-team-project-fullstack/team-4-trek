@@ -14,9 +14,15 @@ body, html{
 .top-image {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     width: auto;
-    height: 70vh;
+    height: 50vh;
+    margin: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    justify-items: center;
+    align-items: center;
 }
-
 #topper{
     height:84px;}
 
@@ -27,8 +33,7 @@ body, html{
 ul#horizontal-list{
     list-style: none;
     padding-top: 10px;
-
-    }
+ }
 ul#horizontal-list li{
     display: inline;
     padding: 10px 40px;
@@ -45,6 +50,12 @@ ul#horizontal-list li{
     text-align: center;
     color: #56202D;
  }
+ .middle-text {
+ margin-top: -25px;
+ margin-left: -20px;
+ margin-right: -20px;
+ margin-bottom: 50px;
+ }
  .top-blogs {
     align-items: center;
     display: flex;
@@ -52,6 +63,10 @@ ul#horizontal-list li{
     flex-wrap: wrap;
     padding: 20px;
     justify-content: center;
+     background-color: #EBC9C0;
+     margin: -20px;
+     margin-left: -20px;
+     margin-right: -20px;
 }
 .top-blog-image-1 {
     height: 60vh;
@@ -73,7 +88,6 @@ ul#horizontal-list li{
     grid-column: 3/4;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin: 25px;
-
 }
 .top-blog-image-3 {
     height: 60vh;
@@ -84,7 +98,6 @@ ul#horizontal-list li{
     grid-column: 3/4;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin: 25px;
-
 }
 .bottom-blogs {
     align-items: center;
@@ -93,9 +106,13 @@ ul#horizontal-list li{
     flex-wrap: wrap;
     padding: 20px;
     justify-content: center;
+    background-color: #EBC9C0;
+    margin: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
 }
 .bottom-blog-image-1 {
-    height: 55vh;
+    height: 45vh;
     width:auto;
     object-fit: cover;
     vertical-align: bottom;
@@ -105,7 +122,7 @@ ul#horizontal-list li{
     margin: 15px;
 }
 .bottom-blog-image-2 {
-    height: 55vh;
+    height: 45vh;
     width:auto;
     object-fit: cover;
     vertical-align: bottom;
@@ -115,8 +132,8 @@ ul#horizontal-list li{
     margin: 15px;
 }
 .bottom-blog-image-3 {
-    height: 55vh;
-    width:auto;
+    height: 45vh;
+    width: auto;
     object-fit: cover;
     vertical-align: bottom;
     grid-row: 2/3;
@@ -124,9 +141,47 @@ ul#horizontal-list li{
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin: 15px;
 }
+.testimonial-image {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/testimonial-2.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 50vh;
+position: relative;
+}
+.testimonial-text {
+color: white;
+left: 50%;
+position: absolute;
+text-align: center;
+top: 20%;
+transform: translate(-50%, -50%);
+}
+#first-box {
+ box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: #2F4F4F;
+  margin: auto 5rem;
+  /* max-width: 900px; */
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  padding: 1rem;
+}
+.testimonial-quote {
+color: #DCDCDC;
+margin: 15px;
+}
+button {
+background: #808080;
+text-align: center;
+}
+.testimonial-blurb {
+background-position: center;
+padding-top: 50px;
+}
 footer {
     text-align: center;
-    font-size: 1.5rem;
     margin: 0;
     padding: 2rem;
     color: #767E0F;
