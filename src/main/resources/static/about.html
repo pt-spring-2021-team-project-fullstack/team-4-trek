@@ -4,95 +4,103 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="\about.css" />
         <title>Treks</title>
     </head>
     <body>
-        <div class="wrapper">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html" target="#">TREKS</a>
-                    </li>
-                    <li>
-                        <a href="#continents" target="_self">CONTINENTS</a>
-                    </li>
-                    <li>
-                        <a href="regions.html" target="_blank">REGIONS</a>
-                    </li>
-                    <li>
-                        <a href="#trekInfo" target="_self">INFORMATION</a>
-                    </li>
-                    <li>
-                        <a href="aboutTeam.html" target="_blank">ABOUT TEAM</a>
-                    </li>
-                </ul>
-            </nav>
-            <main>
-                <section class="createTrek">
-                    <div class="container">
-                        <img src="/images/trek1.jpg" alt="" />
 
-                        <div class="title">
-                            <h1>ABOUT OUR TEAM</h1>
-                            <h2>A Passion For Travel.</h2>
-                        </div>
-                    </div>
-                </section>
-                <section class="containers">
-                    <div>
-                        <div class="container1">
-                            <h3>
-                               Made up of knowledgeable individuals with an unparalleled passion for travel, you will find our team determined to help adventurers plan their next trek!
-                            </h3>
-                        </div>
+    <nav>
+        <ul id= "navigationBar">
+            <a class="active" href="index.html">Home</a>
+            <a href="trekTypes.html">Information</a>
+            <a href="#continents">Continents</a>
+            <a href="regions.html">Regions</a>
+            <a href="/treks">Treks</a>
+            <a href="blog.html">Blog</a>
+            <a href="testimonial.html">Reviews</a>
+            <a href="about.html">About Us</a>
+        </ul>
+        <select data-placeholder="Choose a Language...">
+            <option value="EN">English</option>
+            <option value="PL">Polish</option>
+        </select>
 
-                        <div class= "container2">
-                            <figure>
-                                <img src="/images/shuayb.JPG" alt="" class="container2_image">
-                            </figure>
-                            <h2>Shuayb Farrah</h2>
-                            <h3>Professed "Citizen of the World", Chelsea combines her avid sense of adventure and love for full stack developing to arrange the perfect trek for each client. With multiple years in event planning and management, she can turn your dream into a comprehensive itinerary.
-                                "Not All Who Wonder Are Lost" is her favorite quote. Chelsea believes that everyone should step out of their comfort zone to experience the world's breathtaking views.</h3>
-                        </div>
-                        <div class= "container3">
-                            <figure>
-                                <img src="images\chelsea.jpg" alt="" class="container3_image">
-                            </figure>
-                            <h2>Chelsea James</h2>
-                            <h3>Professed "Citizen of the World", Chelsea combines her avid sense of adventure and love for full stack developing to arrange the perfect trek for each client. With multiple years in event planning and management, she can turn your dream into a comprehensive itinerary.
-                                "Not All Who Wonder Are Lost" is her favorite quote. Chelsea believes that everyone should step out of their comfort zone to experience the world's breathtaking views.</h3>
-                        </div>
-                        <div class= "container4">
-                            <div>
-                            <figure>
-                                <img src="images\lawrence.jpg" alt="" class="container4_image">
-                            </figure>
-                        </div>
-                            <h2>Lawrence Jones</h2>
-                            <h3>A commercially minded full-stack developer, Lawrence is a northeast Ohio native who has also lived, studied, and worked in the United Kingdom, China, and Poland. When not developing code in Java, HTML, or CSS, and helping our clients plan their perfect treks he can be found around the world enjoying a baseball game at Progressive Field in Cleveland, catching waves off Waikiki beach, tasting whisky in Scotland, or listening to the relaxing sounds of Chopin in Warsaw's Lazienki Park. </h3>
-                        </div>   
-                        <div class= "container5">
-                            <div>
-                                <figure>
-                                <img src="images\tyler.png" alt="" class="container5_image">
-                            </figure>
-                        </div>
-                            <h2>Tyler Koenig</h2>
-                            <h3>Tyler, a creative software developer with a strong command of HTML, CSS, & Java is also an avid explorer. His favorite locations include the Grand Canyon and Ireland's idyllic Cliff's of Moher. Spending his leisure time hiking, biking, four-wheeling, and kayaking across the world, Tyler is an expert in "off-the-beaten-path" treks.  </h3>
-                        </div>
-                        <div class= "container6">
-                            <h2>David Senabuyla</h2>
-                            <h3>Professed "Citizen of the World", Chelsea combines her avid sense of adventure and love for full stack developing to arrange the perfect trek for each client. With multiple years in event planning and management, she can turn your dream into a comprehensive itinerary.
-                                "Not All Who Wonder Are Lost" is her favorite quote. Chelsea believes that everyone should step out of their comfort zone to experience the world's breathtaking views.</h3>
-                        </div>
-                    </div>
-                </section>
- 
-            </main>
-            <footer>
-                <span id="copyright"> &copyWeCanCodeIT Team 4 2021 </span>
-            </footer>
-        </div>
+    </nav>
+    <header>
+        <h1>
+            A Passion For Travel.
+        </h1>
+        <span>
+        <h2>Headquartered in Cleveland, with satellite offices in Columbus, Ohio and Warsaw, Poland, our global team is made up of tech-savvy individuals with an unparalleled passion for travel. Scroll down to learn more and click on profile pictures for further information.</h2>
+        </span>
+    </header>
+</div>
+
+
+
+<div id="teamContainer">
+    <section id="shuaybContainer">
+
+        <a href="https://github.com/shuaybfarah/"><img src="./images/shuayb.JPG"><img></a>
+        <h2>SHUAYB FARAH</h2>
+        <p>Shuayb enjoys helping old ladies across the road. He is patient and kind.  He is currently and was always single. Shuayb's best friend is no one at the moment.</p>
+    </section>
+
+    <section id="chelseaContainer">
+
+        <a href="https://github.com/ChelsMarea1/"><img src="./images/chelsea.jpg"><img></a>
+        <h2>CHELSEA JAMES</h2>
+        <p>Professed "Citizen of the World", Chelsea combines her avid sense of adventure and love for full stack developing to arrange the perfect trek for each client. With multiple years in event planning and management, she can turn your dream into a comprehensive itinerary.
+            "Not All Who Wander Are Lost" is her favorite quote. Chelsea believes that everyone should step out of their comfort zone to experience the world's breathtaking views.</p>
+    </section>
+
+    <section id="lawrenceContainer">
+
+        <a href="https://github.com/LJ3K/"><img src="./images/lawrence.jpg"><img></a>
+        <h2>LAWRENCE JONES</h2>
+        <p>A commercially minded full-stack developer, Lawrence is a Northeast Ohio native who has also lived, studied, and worked in the United Kingdom, China, and Poland. When not programming or helping our clients plan their perfect journey, he can be found around the world enjoying a baseball game at Progressive Field in Cleveland, enjoying a pint in London, or listening to Chopin in Warsaw's Łazienki Park.</p>
+    </section>
+    <section id="tylerContainer">
+
+        <a href="https://github.com/lerko96/"><img src="./images/tyler.png"><img></a>
+        <h2>TYLER KOENIG</h2>
+        <p>Tyler, a creative software developer with a strong command of HTML, CSS, & Java is also an avid explorer. His favorite locations include the Grand Canyon and Ireland's idyllic Cliff's of Moher. Spending his leisure time hiking, biking, four-wheeling, and kayaking across the world, Tyler is an expert in "off-the-beaten-path" treks.</p>
+    </section>
+
+    <section id="davidContainer">
+
+        <a href="https://github.com/vascoe1/"><img src="./images/david.jpg"><img></a>
+        <h2>DAVID SENABUYLA</h2>
+        <p>Is a software developer.</p>
+    </section>
+    </div>
+
+
+<div id="contactContainer">
+    <section id="getInTouch">
+        <h2>
+            Contact Us</h2>
+        <ul>
+            <li>Email: sales@Company.com</li>
+            <li>Phone (USA): +1 555-555-5555 (Monday to Friday: 9-5 pm Eastern Time)</li>
+            <li>Phone (EU): +48 555 555 555 (Monday to Friday: 9-5 pm Central European Time)</li>
+        </ul>
+    </section>
+</div>
+
+    </section>
+
+    <div id="clockContainer">
+        <section id="clocks">
+    <div style="text-align:center;padding:1em 0;"> <h4><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/5150529"><span style="color:gray;"></span><br />Cleveland</a></h4> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FNew_York" width="100%" height="90" frameborder="0" seamless></iframe> </div>
+
+    <div style="text-align:center;padding:1em 0;"> <h4><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/756135"><span style="color:gray;"></span><br />Warsaw</a></h4> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Europe%2FWarsaw" width="100%" height="90" frameborder="0" seamless></iframe> </div>
+        </section>
+    </div>
+
+    <footer>
+<span id="copyright"> &copy WeCanCodeIT Team-4 2021 </span>
+    </footer>
     </body>
 </html>
