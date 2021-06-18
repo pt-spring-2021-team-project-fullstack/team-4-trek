@@ -189,86 +189,61 @@ body, html{
     padding-top: 6px;
     }
     .Trek-styles-grid {
-    align-items: center;
-    display: grid;
-    gap: 0;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    margin: 0;
-    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 35px;
+    text-align: center;
+    padding: 20px;
+    }
+    .trek-grid-item {
+    padding: 20px;
+    width: 30%;
     }
     .basecamp-style-text {
     color: #332C23;
-    grid-column: 1/2;
-    grid-row:   2/3;
-    padding: 10px;
-    text-align: center;
     }
     .image-basecamp-style {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    flex-grow: 1;
-    grid-column: 1/2;
-    grid-row:   1/2;
     height: 25vh;
     object-fit: cover;
     vertical-align: bottom;
     }
     .hut2hut-style-text {
     color: #332C23;
-    grid-column: 2/3;
-    grid-row:   2/3;
-    justify-items: center;
-    padding: 15px;
-    text-align: center;
     }
     .image-hut2hut-style {
-    grid-column: 2/3;
-    grid-row: 2/3;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     height: 25vh;
-    text-align: center;
+    object-fit: cover;
+    vertical-align: bottom;
     }
     .dayhike-style-text {
     color: #332C23;
-    grid-column: 3/4;
-    grid-row: 2/3;
-    margin: -20px;
-    justify-items: center;
-    padding: 15px;
-    text-align: center;
     }
     .image-dayhike-style {
-    grid-column: 3/4;
-    grid-row: 1/2;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     height: 25vh;
-    text-align: center;
+    object-fit: cover;
+    vertical-align: bottom;
     }
     .backpacker-style-text {
     color: #332C23;
-    grid-column: 1/2;
-    grid-row: 4/5;
-    justify-items: center;
-    padding: 15px;
-    text-align: center;
     }
     .image-backpacker-style {
-    grid-column: 1/2;
-    grid-row: 3/4;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     height: 25vh;
-    text-align: center;
+    object-fit: cover;
+    vertical-align: bottom;
     }
     .llama-style-text {
     color: #332C23;
-    grid-column: 3/4;
-    grid-row: 4/5;
-    justify-items: center;
-    padding: 15px;
-    text-align: center;
     }
     .image-llama-style {
-    grid-column: 3/4;
-    grid-row: 3/4;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     height: 25vh;
-    text-align: center;
+    object-fit: cover;
+    vertical-align: bottom;
     }
     @media only screen and (max-width: 961px) {
     header {
@@ -287,4 +262,6 @@ body, html{
     color: #ffffff;
     list-style-type: none;
     text-align: center;
+    margin-left: -40px;
+    margin-right: -40px;
     }

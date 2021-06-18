@@ -117,6 +117,8 @@
     padding: 20px;
     background-color: #FFE4C0;
     margin-top: 10px;
+    margin-left: -40px;
+    margin-right: -40px;
     }
     #center {
     text-align: center;
@@ -276,6 +278,8 @@
     color: #ffffff;
     list-style-type: none;
     text-align: center;
+    margin-left: -40px;
+    margin-right: -40px;
     }
     @media only screen and (max-width: 961px) {
     header {display: flex;

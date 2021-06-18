@@ -132,8 +132,8 @@ body, html{
     flex-wrap: wrap;
     justify-content: center;
     margin: -20px;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: -40px;
+    margin-right: -40px;
     padding: 20px;
     }
     .top-blog-image-1 {
@@ -174,8 +174,8 @@ body, html{
     flex-wrap: wrap;
     justify-content: center;
     margin: -20px;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: -40px;
+    margin-right: -40px;
     padding: 20px;
     }
     .bottom-blog-image-1 {
@@ -214,7 +214,8 @@ body, html{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 60vh;
+    margin-right: -40px;
     position: relative;
     }
     .testimonial-text {
@@ -228,7 +229,7 @@ body, html{
     }
     #first-box {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border: black;
+    border: 10px solid #515151;
     background: #2F4F4F;
     margin: auto 5rem;
     overflow: hidden;
@@ -266,6 +267,8 @@ body, html{
    color: #ffffff;
    list-style-type: none;
    text-align: center;
+   margin-left: -40px;
+   margin-right: -40px;
    }
     @media only screen and (max-width: 961px) {
     header {
