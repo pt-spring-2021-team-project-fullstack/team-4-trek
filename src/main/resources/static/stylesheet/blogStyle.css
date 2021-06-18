@@ -157,7 +157,7 @@ body, html{
     text-align: center;
     top: 20%;
     transform: translate(-50%, -50%);
-    font-size: 30px;
+    font-size: 20px;
     }
     #first-box {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -173,13 +173,13 @@ body, html{
     color: #DCDCDC;
     margin: 15px;
     align-self: center;
-    font: 1.2rem/1.4 Georgia, serif;
+    font: 1rem/1.2 Georgia, serif;
 
     }
     button {
     background: #808080;
     text-align: center;
-    font-size: 18px;
+    font-size: 12px;
     }
     .testimonial-blurb {
     background-position: center;
