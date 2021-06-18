@@ -177,3 +177,26 @@ footer {
     margin: auto 5rem;
     padding: 1rem auto;
 }
+
+.create_btn{
+    position: fixed;
+    bottom: 30px;
+    right 30px;
+    z-index: 9;
+}
+
+.create_btn{
+    height: 39px;
+    width:37px;
+    text-align: center;
+    background: black;
+    display: block;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.create_btn a span{
+    color: #f2f2f2;
+    line-height: 39px;
+    font-size: 25px;
+}

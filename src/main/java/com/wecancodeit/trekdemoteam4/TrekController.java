@@ -71,7 +71,7 @@ public class TrekController {
             trekRepo.save(trekToAdd);
         }
 
-        return "redirect:/treks/";
+        return "redirect:/treks";
     }
 
     @GetMapping("/continent/{continentName}")
