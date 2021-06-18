@@ -31,7 +31,6 @@ public class TrekController {
     @RequestMapping("/regions")
     public String displayRegions(Model model){
         model.addAttribute("regionsModel", regionRepo.findAll());
-        model.addAttribute("treksModel", trekRepo.findAll());
         return "regions";
     }
 

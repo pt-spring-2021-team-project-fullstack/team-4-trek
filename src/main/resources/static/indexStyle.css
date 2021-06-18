@@ -202,3 +202,44 @@ footer {
 	padding: 2rem;
 	background-color: #767e0f;
 }
+
+.testimonial-image {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("images/testimonial.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50vh;
+	position: relative;
+}
+.testimonial-text {
+	color: white;
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	top: 20%;
+	transform: translate(-50%, -50%);
+}
+.testimonial-blurb {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	background-position: center;
+}
+#first-box {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	background: #2f4f4f;
+	margin: auto 5rem;
+	/* max-width: 900px; */
+	overflow: hidden;
+	position: absolute;
+	text-align: center;
+	top: 40%;
+	padding: 1rem;
+}
+.testimonial-quote {
+	color: #dcdcdc;
+	margin: 15px;
+}
+button {
+	background: #808080;
+	text-align: center;
+}
