@@ -1,232 +1,267 @@
 body, html{
     background-color: rgb(192, 184, 184);
     height: 100px;
-}
-.wrapper {
-    /* layout */
-    width: 100%;
+    font-family: san-serif;
+    font-size: 20px;
+    }
+    .wrapper {
     height: 100vh;
     display: flex;
-    -webkit-flex-wrap: nowrap;
     flex-wrap: nowrap;
-  }
-.top-image {
+    -webkit-flex-wrap: nowrap;
+    width: 100%;
+    }
+    .top-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/snow-forest-3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     height: 50vh;
-}
-.top-text {
-text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-#topper{
-    height:84px;}
-    
-.table {
-    display:table;
-    margin:0 auto;
-    }   
-ul#horizontal-list{
-    list-style: none;
-    padding-top: 10px;
-    
+    position: relative;
     }
-ul#horizontal-list li{
-    display: inline;
-    padding: 10px 40px;
-}
-.image-main {
+    .top-text {
+    color: white;
+    font-family: san-serif;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    }
+    #topper{
+    height:84px;
+    }
+    nav{
+    flex: 1;
+    text-align: center;
+    background: #eee;
+    flex-flow: row;
+    display: flex;
+    height: 3em;
+    width: 100%;
+    float:none;
+    clear: both;
+    position: fixed;
+    overflow: hidden;
+    border-bottom-style: dotted;
+    }
+    nav ul{
+        display: inline-block;
+        list-style-type: none;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        #F0ECE9;
+    }
+    nav ul li{
+        display: inline-block;
+        margin-right: 20px;
+        text-align: center;
+        font-weight: bold;
+        justify-content: center;
+        float: none;
+        color: #444;
+    }
+    nav a {
+    color: #031136;
+    padding: .5em 3em;
+    text-decoration: none;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+          z-index: 2;
+          text-decoration: none;
+          color: #444;
+          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+    }
+    nav a:hover {
+    border-bottom: 0px; color: #F0ECE9;}
+    nav   ul li:first-child a{ border:none; }
+    nav   ul li:nth-child(2) a{ border-left: 10px solid #3895FF; }
+    nav   ul li:nth-child(3) a{ border-left: 10px solid #3358FF; }
+    nav   ul li:nth-child(4) a{ border-left: 10px solid #0D00FF; }
+    nav   ul li:nth-child(5) a{ border-left: 10px solid #3400AD; }
+    nav   ul li:nth-child(6) a{ border-left: 10px solid #4400B3; }
+    nav   ul li:nth-child(7) a{ border-left: 10px solid #5600B8; }
+    nav   ul li:nth-child(7) a{ border-left: 10px solid #740063; }
+    nav   ul li:last-child a{ border-left: 10px solid #822FAF; }
+    }
+    nav a : after {
+      content: "";
+      height: 100%;
+      left: 0;
+      top: 0;
+      width: 0px;
+      position: absolute;
+      transition: all 0.3s ease 0s;
+      -webkit-transition: all 0.3s ease 0s;
+      z-index: -1;
+    }
+    nav a:hover:after{ width: 100%; }
+    nav   ul li:first-child a{ border:none; }
+    nav   ul li:nth-child(2) a{ border-left: 10px solid #3895FF; }
+    nav   ul li:nth-child(3) a{ border-left: 10px solid #3358FF; }
+    nav   ul li:nth-child(4) a{ border-left: 10px solid #0D00FF; }
+    nav   ul li:nth-child(5) a{ border-left: 10px solid #3400AD; }
+    nav   ul li:nth-child(6) a{ border-left: 10px solid #4400B3; }
+    nav   ul li:nth-child(7) a{ border-left: 10px solid #5600B8; }
+    nav   ul li:nth-child(7) a{ border-left: 10px solid #740063; }
+    nav   ul li:last-child a{ border-left: 10px solid #822FAF; }
+
+    .image-main {
     height: 80vh;
     width: 100%;
-}
-.image-main:hover {
-    content: url('/images/water-mountain.jpg');
-    height: 100vh;
-    width: 100%;
-}
-.trek-type-flex-box {
-    background-color: rgb(179, 181, 184);
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-.trek-type-flex-box > div {
-    background-color: #f1f1f1;
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 20px;
-  }
-.gallery {
+    }
+    .gallery {
     align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}
-#center {
+    padding-bottom: 9px;
+    }
+    #center {
     text-align: center;
- }
-.text {
+    }
+    .text {
+    left: 50%;
     position: absolute;
     top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
-}
-.image-basecamp {
+    }
+    .image-basecamp {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex-grow: 1;
+    height: 23vh;
+    object-fit: cover;
+    vertical-align: bottom;
+    }
+    .image-hut2hut {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex-grow: 1;
+    height: 23vh;
+    object-fit: cover;
+    vertical-align: bottom;
+    }
+    .image-dayhike {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex-grow: 1;
+    height: 23vh;
+    object-fit: cover;
+    vertical-align: bottom;
+    }
+    .image-backpack {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     height: 23vh;
     flex-grow: 1;
     object-fit: cover;
     vertical-align: bottom;
-}
-.image-hut2hut {
-    height: 23vh;
+    }
+    .image-llama {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     flex-grow: 1;
+    height: 23vh;
     object-fit: cover;
     vertical-align: bottom;
-}
-.image-dayhike {
-    height: 23vh;
-    flex-grow: 1;
+    }
+    .Trekking-what {
+    background-color: #ACA5A5;
+    color: #332C23;
+    font-family: san-serif;
+    margin: -6px;
+    padding-bottom: 8px;
+    padding-top: 1px;
+    }
+    .tw-text {
+    color: #332C23;
+    font-family: san-serif;
+    list-style: none;
+    text-align: center;
+    }
+    .Trekking-type {
+    background-color: #999393;
+    font-family: san-serif;
+    margin: -10px;
+    margin-bottom: 1px;
+    padding: 10px;
+    padding-top: 6px;
+    }
+    .Trek-styles-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 35px;
+    text-align: center;
+    padding: 20px;
+    }
+    .trek-grid-item {
+    padding: 20px;
+    width: 30%;
+    }
+    .basecamp-style-text {
+    color: #332C23;
+    }
+    .image-basecamp-style {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: 25vh;
     object-fit: cover;
     vertical-align: bottom;
-}
-.image-backpack {
-    height: 23vh;
-    flex-grow: 1;
+    }
+    .hut2hut-style-text {
+    color: #332C23;
+    }
+    .image-hut2hut-style {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: 25vh;
     object-fit: cover;
     vertical-align: bottom;
-}
-.image-llama {
-    height: 23vh;
-    flex-grow: 1;
+    }
+    .dayhike-style-text {
+    color: #332C23;
+    }
+    .image-dayhike-style {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: 25vh;
     object-fit: cover;
     vertical-align: bottom;
-}
-.Trek-styles-grid {
-    display: grid;
-    gap: 0;
-    grid-column: span;
-    grid-template-columns: 1fr minmax(min-content, 4fr);
-    grid-template-rows: repeat(5, 1fr);
-    margin: 0;
-    padding: 0px;
-    grid-template-areas:
-    "basecamp-style   basecamp-style-text"
-    "hut2hut-style    hut2hut-style-text"
-    "dayhike-style    dayhike-style-text"
-    "backpacker-style backpacker-style-text"
-    "llama-style      llama-style-text"    
-}
-.image-style {
-    max-width: 100%; 
-    height: auto; 
-}
-#basecamp-style {
-    grid-column: 1/2;   
-    grid-row:   1/2;
-  }
-.basecamp-style-text {
-    background-color: #FFDEB1;
-    color:  #56202D;
-    text-align: center;
-    grid-column: 2/3;   
-    grid-row:   1/2;
-}
-#hut2hut-style {
-    height: 5px;
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-.hut2hut-style-text {
-    background-color: #767E0F;
-    color: #56202D;
-    text-align: center;
-    grid-column: 2/3;   
-    grid-row:   2/3;
-}
-#dayhike-style {
-    height: 5px;
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-.dayhike-style-text {
-    background-color:  #FFDEB1;
-    color:  #56202D;
-    text-align: center;
-    grid-column: 2/3;   
-    grid-row: 3/4;
-}
-#backpacker-style {
-    height: 5px;
-    grid-column: 1/2;
-    grid-row: 4/5;
-}
-.backpacker-style-text {
-    background-color: #767E0F;
-    color:  #56202D;
-    text-align: center;
-    grid-column: 2/3;   
-    grid-row: 4/5;
-}
-#llama-style {
-    height: 5px;
-    grid-column: 1/2;
-    grid-row: 5/6;
-}
-.llama-style-text {
-    background-color: #FFDEB1;
-    color:  #56202D;
-    text-align: center;
-    grid-column: 2/3;   
-    grid-row: 5/6;
-}
-
-@media only screen and (max-width: 961px) {
+    }
+    .backpacker-style-text {
+    color: #332C23;
+    }
+    .image-backpacker-style {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: 25vh;
+    object-fit: cover;
+    vertical-align: bottom;
+    }
+    .llama-style-text {
+    color: #332C23;
+    }
+    .image-llama-style {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: 25vh;
+    object-fit: cover;
+    vertical-align: bottom;
+    }
+    @media only screen and (max-width: 961px) {
     header {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
     }
     main {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    }
     }
     footer {
-        text-align: center;
-        font-size: 1.5rem;
-        margin: 0;
-        padding: 2rem;
-        color: #767E0F;
-    }
-}
-
-.create_btn{
-    position: fixed;
-    bottom: 30px;
-    right 30px;
-    z-index: 9;
-}
-
-.create_btn{
-    height: 39px;
-    width:37px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background: #56202D;
+    color: #ffffff;
+    list-style-type: none;
     text-align: center;
-    background: black;
-    display: block;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.create_btn a span{
-    color: #f2f2f2;
-    line-height: 39px;
-    font-size: 25px;
-}
+    margin-left: -40px;
+    margin-right: -40px;
+    }

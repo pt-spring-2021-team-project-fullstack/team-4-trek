@@ -20,40 +20,78 @@ section {
 	margin: 0 auto;
 }
 
-nav {
-	background-color: #8e3a52;
+.topnav {
+  overflow: hidden;
+  background-color: #D1D1D1;
+  padding: 10px;
+  padding-top: 10px;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+.active {
+padding: 40px;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+.topnav .search-container {
+  float: right;
+}
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.topnav .search-container button:hover {
+  background: #ccc;
 }
 
-nav ul {
-	list-style-type: none;
-	text-align: center;
+#top {
+	/* margin-bottom: 3em; */
 }
 
-nav li {
-	display: inline;
-}
-
-nav a {
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 600;
-	letter-spacing: 0.1rem;
-	padding: 1rem;
-}
-
-nav a:hover {
-	background-color: #56202d;
-}
-
-.createTrek .container {
+#title {
 	background-image: url("images/trek2.jpg");
-	/* width:max-content; */
-	width: 100%;
+	/* background-size: cover; */
 	height: 275px;
-	opacity: 0.75;
-	/* position: relative; */
 	text-align: center;
-	/* height: max-content; */
+	color: #ffffff;
+	font-size: 3rem;
+	letter-spacing: .15rem;
+	text-transform: uppercase;
+	font-family: "Staatliches", cursive;
+	margin: auto;
+	padding: 2rem;
+	line-height: 1;
+}
+
+#title h2 {
+	font-size: 2.5rem;
 }
 
 .title {
@@ -62,45 +100,13 @@ nav a:hover {
 	color: #ffffff;
 	letter-spacing: 0.15rem;
 	/* line-height: 2.5rem; */
-	font-size: 3rem;
 	/* position: absolute; */
 	/* top: 30%;
     left: 50%;
     transform: translate(-50%, -50%); */
 }
 
-.title h2 {
-	font-size: 2.5rem;
-}
 
-.creatorContainer {
-}
-
-.trekCreator {
-	position: absolute;
-	top: 30%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.whoWeAre {
-}
-.whoWeAreHeader {
-	text-align: center;
-	padding: 2rem;
-}
-
-.whoWeAreRow {
-	display: flex;
-}
-
-.whoWeAreRow li {
-	flex: 1;
-	padding: 1.25rem;
-}
-
-.destinations {
-}
 
 .continentHeader {
 	font-family: "Staatliches", cursive;
@@ -108,7 +114,7 @@ nav a:hover {
 	letter-spacing: 0.15rem;
 	text-align: center;
 	padding: 1rem;
-	background-color: #ffdeb1;
+	background-color: #D5B6AC;
 }
 
 .continentHeader h3 {
@@ -117,18 +123,18 @@ nav a:hover {
 }
 
 .continentContainer {
-	background-color: #56202d;
+	background-color: #805257;
 	display: flex;
-	padding: 2rem;
+	padding: .5rem .25rem;
 }
 
 .continentBlock {
-	background-color: #ffdeb1;
+	background-color: #FFE8D6;
+	border-radius: 5px;
 	width: 300px;
 	overflow: hidden;
-	align-content: space-between;
-	margin: 0;
-	padding: 1rem;
+	margin: 1rem;
+	/* padding: 1rem auto; */
 	text-align: center;
 }
 
@@ -139,15 +145,21 @@ nav a:hover {
 
 .continentBlock a {
 	text-decoration: none;
-	color: black;
+	color: #000000;
 	font-family: "Staatliches", cursive;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	letter-spacing: 0.15rem;
 	margin: 1rem auto;
+	overflow: hidden;
+}
+
+.continentBlock a:hover {
+	font-weight: 600;
+	/* border-bottom: 2px solid black; */
 }
 
 #trekInfo {
-	background-color: #ffdeb1;
+	background-color: #D5B6AC;
 }
 
 .infoHeader {
@@ -158,6 +170,16 @@ nav a:hover {
 	padding: 1rem;
 }
 
+.infoHeader a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.infoHeader a:hover {
+	line-height: 1rem;
+	border-bottom: 5px solid #000;
+}
+
 .infoHeader h3 {
 	font-size: 1.75rem;
 	line-height: 2rem;
@@ -166,25 +188,28 @@ nav a:hover {
 .infoContainer {
 	display: flex;
 	flex-direction: row;
-	padding: 2rem;
-	background-color: #d5603f;
+	padding: .5rem;
+	background-color: #805257;
 }
 
 .infoList {
+	margin: 1rem;
 	flex: 2;
 	text-align: center;
 	/* justify-content: space-between; */
 	padding: 0 2rem;
-	background-color: #ffdeb1;
+	background-color: #FFE8D6;
+	border-radius: 5px;
 }
 
 .infoList a {
 	color: black;
-	text-decoration: none;
 }
 
 .infoList a:hover {
-	color: #767e0f;
+	font-weight: 600;
+	border-bottom: 2px solid black;
+
 }
 
 .infoList ul {
@@ -200,7 +225,66 @@ footer {
 	font-size: 1.5rem;
 	margin: 0;
 	padding: 2rem;
-	background-color: #767e0f;
+	background-color: #56202D;
+   color: #ffffff;
+   letter-spacing: .1rem;
+
+}
+
+.testimonial-image {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("images/testimonial2.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50vh;
+	position: relative;
+}
+.testimonial-text {
+	color: white;
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	top: 20%;
+	transform: translate(-50%, -50%);
+}
+.testimonial-blurb {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	background-position: center;
+}
+#first-box {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	background: #2f4f4f;
+	margin: auto 5rem;
+	/* max-width: 900px; */
+	overflow: hidden;
+	position: absolute;
+	text-align: center;
+	top: 40%;
+	padding: 1rem;
+}
+.testimonial-quote {
+	color: #dcdcdc;
+	margin: 15px;
+}
+button {
+	background: #808080;
+	text-align: center;
+}
+
+@media screen and (max-width: 812px) {
+.continentContainer {
+	flex-direction: column;
+	align-items: center;
+}
+
+.infoContainer {
+	flex-direction: column;
+}
+
+footer {
+	padding-top: 5rem;
+}
 }
 
 
