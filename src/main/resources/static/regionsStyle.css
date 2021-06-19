@@ -1,0 +1,235 @@
+body {
+	margin: 0 auto;
+	font-size: 15px;
+}
+
+#wrapper {
+   background-color:antiquewhite;
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+}
+
+.topnav {
+   overflow: hidden;
+   background-color: #D1D1D1;
+   padding: 10px;
+   padding-top: 10px;
+   margin-right: -20px;
+   margin-left: -20px;
+ }
+ .active {
+ padding: 40px;
+ }
+ .topnav a {
+   float: left;
+   display: block;
+   color: black;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+ }
+ .topnav a:hover {
+   background-color: #ddd;
+   color: black;
+ }
+ .topnav a.active {
+   background-color: #2196F3;
+   color: white;
+ }
+ .topnav .search-container {
+   float: right;
+ }
+ .topnav input[type=text] {
+   padding: 6px;
+   margin-top: 8px;
+   font-size: 17px;
+   border: none;
+ }
+ .topnav .search-container button {
+   float: right;
+   padding: 6px;
+   margin-top: 8px;
+   margin-right: 16px;
+   background: #ddd;
+   font-size: 17px;
+   border: none;
+   cursor: pointer;
+ }
+ .topnav .search-container button:hover {
+   background: #ccc;
+ }
+
+
+#title {
+   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(images/regionHeader.jpg);
+   background-size: cover;
+   background-position-y: 91%;
+   min-height:325px;
+   font-size: 2rem;
+   text-align: center;
+	color: #ffffff;
+   /* margin-top:3rem; */
+   margin-bottom: 1.5rem;
+}
+
+
+.container {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem 1.5rem;
+	padding: 1rem;
+   min-height: 200px;
+   border-radius: 25px;
+   box-shadow: 2px 1px 11px 2px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 2px 1px 11px 2px rgba(0,0,0,0.75);
+   -moz-box-shadow: 2px 1px 11px 2px rgba(0,0,0,0.75);
+}
+
+.container h2 {
+	color: #ffffff;
+	background-color: hsla(0, 50%, 0%, 0.33);
+   border-radius: 5px;
+	flex: 1.5;
+	text-align: center;
+	align-self: center;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+   padding: 1rem;
+   margin: 1rem 1rem;
+}
+
+.container ul {
+	color: #ffffff;
+   font-size: 1.3rem;
+	text-align: center;
+   align-self: end;
+	justify-content: center;
+   letter-spacing: .1rem;
+	background-color: hsla(0, 100%, 0%, 0.5);
+   border-radius: 5px;
+   /* border-radius: 100px; */
+	display: flex;
+	flex: 4;
+	list-style: none;
+	line-height: 3;
+	margin: 0 auto;
+   padding: 1rem 2rem;
+   overflow: scroll;
+}
+
+.container li {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.container a {
+	color: #ffffff;
+	text-decoration: none;
+   background: none;
+   border: 2px solid;
+   border-radius: 5px;
+   font: inherit;
+   line-height: 1.15;
+   margin: 0 1rem;
+   padding: 1rem;
+}
+
+
+.container a:hover {
+	position: relative;
+   font-weight: 800;
+}
+
+
+
+.empty {
+	flex: 0;
+}
+
+#africa {
+	background-image: url(images/africa3.jpg);
+	background-repeat: no-repeat;
+	background-position-x: 15%;
+	background-position-y: 42%;
+	background-size: cover;
+   /* position:sticky; */
+}
+
+#antarctica {
+	background-image: url(images/antarctica2.jpg);
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: 45%;
+	background-size: cover;
+}
+
+#asia {
+	background-image: url(images/asia2.jpg);
+	background-repeat: no-repeat;
+	background-position-x: 55%;
+	background-position-y: 40%;
+	background-size: cover;
+}
+
+#australia {
+	background-image: url(images/australia2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x: 50%;
+	background-position-y: 34%;
+}
+
+#europe {
+   background-image: url(images/europe2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position-x: center;
+   background-position-y: 23%;
+}
+
+#nAmerica {
+   background-image: url(images/nAmerica2.jpg);
+   background-repeat: no-repeat;
+   background-position-x: center;
+   background-position-y: center;
+   background-size: cover;
+}
+
+#sAmerica {
+   background-image: url(images/sAmerica2.jpg);
+   background-repeat: no-repeat;
+   background-position-x: center;
+   background-position-y: 25%;
+   background-size: cover;
+}
+
+footer {
+	text-align: center;
+	font-size: 1.5rem;
+	margin: 0;
+	padding: 2rem;
+	background-color: #56202D;
+   color: #ffffff;
+   letter-spacing: .1rem;
+}
+
+
+@media screen and (max-width: 812px) {
+	.container {
+		flex-direction: column;
+      margin: 1rem 0;
+	}
+
+   .container h2 {
+      margin: 1rem auto;
+   }
+
+	.container ul {
+      position: relative;
+      overflow: scroll;
+	}
+}
