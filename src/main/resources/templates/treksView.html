@@ -4,21 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <title>TREKS TREKS TREKS!!!</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container">
 
-        <header class="header_class">
+        <div class="arrow_btn">
+            <a href="#headerclass"><span class="fas fa-angle-up">^</span></a>
+        </div>
+
+        <header class="header_class" id="headerclass">
             <nav>
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/treks">Treks</a></li>
-                    <li><a href="#">Continents</a></li>
-                    <li><a href="/trekTypes.html">Information</a></li>
-                    <li><a href="/about.html">About Team</a></li>
+                    <li class="header_nav_buttons"><a href="/index.html">Home</a></li>
+                    <li class="header_nav_buttons"><a href="/trekTypes.html">Information</a></li>
+                    <li class="header_nav_buttons"><a href="/treks">Treks</a></li>
+                    <li class="header_nav_buttons"><a href="/index.html#continents">Continents</a></li>
+                    <li class="header_nav_buttons"><a href="/regions.html">Regions</a></li>
+                    <li class="header_nav_buttons"><a href="/testimonial.html">Reviews</a></li>
+                    <li class="header_nav_buttons"><a href="/about.html">Blog</a></li>
+                    <li class="header_nav_buttons"><a href="/about.html">About Team</a></li>
                 </ul>
             </nav>
+
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">Submit</button>
+            </form>
+
         </header>
 
         <div class="test_2">
@@ -29,10 +43,33 @@
                 </div>
             </div>
 
+            <div class="bottom_1">
+
+                <details id="detailsId">
+                    <summary>CREATE YOUR OWN TREK!!!</summary>
+                    <form action="/create-trek" method="POST" class="action_buttons">
+                        <input type="text" name="trekName" placeholder="Name of Trek" class="actions">
+                        <select name="continentName"  class="actions">
+                            <option th:each="continent: ${continentModel}" th:value="${continent.continentName}" th:text="${continent.continentName}"></option>
+                        </select>
+                        <select name="regionName"  class="actions">
+                            <option th:each="region: ${regionModel}" th:value="${region.regionName}" th:text="${region.regionName}"></option>
+                        </select>
+                        <select name="typeName"  class="actions">
+                            <option th:each="trekType: ${typeModel}" th:value="${trekType.typeName}" th:text="${trekType.typeName}"></option>
+                        </select>
+                        <input type="hidden" name="imageUrl" value="image url">
+
+                        <button type="submit" class="actionsB">CREATE!</button>
+                    </form>
+                </details>
+
+            </div>
+
             <div class="main_body">
 
                 <div th:each="trek: ${treksModel}" class="treks">
-                    <a href="https://www.google.com" class="card">
+                    <a href="/test.html" class="card">
                         <div class="thumb" th:style=" 'background-image: url(' + ${trek.imageUrl} + ');'"></div>
                         <article>
                         <h1 th:text="${trek.trekName}" class="trek_name"></h1>
@@ -46,29 +83,12 @@
                         <br>
 
             </div>
-            <div class="bottom_1">
 
-                <details>
-                    <summary>CREATE YOUR OWN TREK!!!</summary>
-                    <form action="/create-trek" method="POST" class="action_buttons">
-                        <input type="text" name="trekName" placeholder="Name of Trek">
-                        <select name="continentName" >
-                            <option th:each="continent: ${continentModel}" th:value="${continent.continentName}" th:text="${continent.continentName}"></option>
-                        </select>
-                        <select name="regionName" >
-                            <option th:each="region: ${regionModel}" th:value="${region.regionName}" th:text="${region.regionName}"></option>
-                        </select>
-                        <select name="typeName" >
-                            <option th:each="trekType: ${typeModel}" th:value="${trekType.typeName}" th:text="${trekType.typeName}"></option>
-                        </select>
-                        <input type="hidden" name="imageUrl" value="image url">
-
-                        <button type="submit">Add a Trek</button>
-                    </form>
-                </details>
-
-            </div>
         </div>
+
+        <footer>
+            <span id="copyright"> &copy WeCanCodeIT Team-4 2021 </span>
+        </footer>
 
     </div>
 </body>
