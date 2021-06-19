@@ -6,23 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheet/testimonialStyle.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <title>Reviews</title>
 </head>
 <body>
 <div class="wrapper">
     <div class="topper">
-        <nav>
-            <ul id= "navigationBar">
-                <li><a href="home.html" target="_blank">HOME</a></li>
-                <li><a href="trekTypes.html" target="_blank">INFORMATION</a></li>
-                <li><a href="index.html" target="_blank">TREKS</a></li>
-                <li><a href="#continents" target="_self">CONTINENTS</a></li>
-                <li><a href="regions.html" target="_blank">REGIONS</a></li>
-                <li><a href="testimonial.html" target="_blank">REVIEWS</a></li>
-                <li><a href="blog.html" target="_blank">BLOG</a></li>
-                <li><a href="about.html" target="_blank">ABOUT US</a></li>
-            </ul>
-        </nav>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="trekTypes.html">Information</a>
+            <a href="index.html#continents">Continents</a>
+            <a href="regions.html">Regions</a>
+            <a href="/treks">Treks</a>
+            <a href="blog.html">Blog</a>
+            <a class="active"href="testimonial.html">Reviews</a>
+            <a href="about.html">About Us</a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
         <main>
             <div class="top-image">
                 <div class="top-text">
@@ -125,6 +130,9 @@
         <footer>
             <span id="copyright"> &copyWeCanCodeIT Team-4 2021 </span>
         </footer>
+        <div class="create_btn">
+            <a href="/treks"><span class="fas fa-angle-up">+</span></a>
+        </div>
     </div>
 </div>
 </body>
